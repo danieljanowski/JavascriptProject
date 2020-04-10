@@ -62,54 +62,53 @@ Wants to feel connected to something bigger
 Kaja Janowska
 
 ## DEMOGRAPHICS
-age 13
-Goes to High School
-Lives in Scotland
-Lives with parents and siblings
-Owns mobile but  shares the laptop
+age 13  
+Goes to High School  
+Lives in Scotland  
+Lives with parents and siblings  
+Owns mobile but  shares the laptop  
 
 ## BEHAVIOURS
-Is interested in science
-Wants to have science as higher levels in the future
-Loves reading both fiction and non-fiction
-Uses both mobile phone and laptop to access websites
-Has parents who want to support her learning and develop interest in science
-Likes sports: swimming, ice skating, roller blading
+Is interested in science  
+Wants to have science as higher levels in the future  
+Loves reading both fiction and non-fiction  
+Uses both mobile phone and laptop to access websites  
+Has parents who want to support her learning and develop interest in science  
+Likes sports: swimming, ice skating, roller blading  
 
 ## NEEDS AND GOALS
-
-Needs science explained in the form that could be understood for her
-Needs it presented with pictures to keep it interesting
-Needs simple design
-Needs to learn fun facts to keep interest in science, likes to share new facts with others
+Needs science explained in the form that could be understood for her  
+Needs it presented with pictures to keep it interesting  
+Needs simple design  
+Needs to learn fun facts to keep interest in science, likes to share new facts with others  
 
 
 # PROTO PERSONA 4
 
 ## NAME
-Tommy Te’nager
+Tommy Te’nager  
 
 ## DEMOGRAPHICS
-Age: 17-19
-Lives in small town
-About to finish highschool/ highschool educated
-From middle class family
-student
+Age: 17-19  
+Lives in small town  
+About to finish highschool/ highschool educated  
+From middle class family  
+student  
 
 ## BEHAVIOURS
-loves reading, maths , video games, sci fi
-Has a custom built gaming computer
-plays video games in free time
-Has recently finished exams
-Spends a lot of time on social media/ browsing internet
-Looking to decide what path to pursue at university
+loves reading, maths , video games, sci fi  
+Has a custom built gaming computer  
+plays video games in free time  
+Has recently finished exams  
+Spends a lot of time on social media/ browsing internet  
+Looking to decide what path to pursue at university  
 
 ## NEEDS AND GOALS
-needs to find a university 
-needs to be given information in a fun way
-Needs a design that feels welcoming and not too childish
-wants to find something they are passionate about
-Wants an interesting career
+needs to find a university  
+needs to be given information in a fun way  
+Needs a design that feels welcoming and not too childish  
+wants to find something they are passionate about  
+Wants an interesting career  
 
 
 
