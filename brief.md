@@ -19,8 +19,6 @@ A user should be able to:
 ## Extensions
 
 - Form, Sort, Search functions
-- Favourites list
-- Displaying selected items
 - Display who is in space
 - Track the ISS on a map
 - Listing the observatories

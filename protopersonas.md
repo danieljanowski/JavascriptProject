@@ -4,56 +4,56 @@
 Maggie Simpson
 
 ## DEMOGRAPHICS
-age 30/40
-lives in a city
-high-school/degree
-PR
-married
-has two kids aged 9 and 12
+age 30/40  
+lives in a city  
+high-school/degree  
+PR  
+married  
+has two kids aged 9 and 12  
 
 ## BEHAVIOURS
 is well organized
-jogs early in the morning, works until 6/7 pm 
-is used to manage her agenda online, now working remotely 
-reads the BBC news online every evening while kids do the homework
-before covid, she preferred doing open air activities with the family during the weekend 
+jogs early in the morning, works until 6/7 pm  
+is used to manage her agenda online, now working remotely  
+reads the BBC news online every evening while kids do the homework  
+before covid, she preferred doing open air activities with the family during the weekend  
 
 ## NEEDS AND GOALS
-needs to manage her time with the family in the most effective way
-needs to find interesting leisure activities both for her kids and herself and her husband
-wants to find a captivating learning activity to do at home
-wants to find a respected, safe and kids-friendly website
+needs to manage her time with the family in the most effective way  
+needs to find interesting leisure activities both for her kids and herself and her husband  
+wants to find a captivating learning activity to do at home  
+wants to find a respected, safe and kids-friendly website  
 
 
 # PROTO PERSONA 2
 
 ## NAME
-James Smith
+James Smith  
 
 ## DEMOGRAPHICS
 27
-Works in marketing, in a large company
-Has a degree
-Lives in a bustling city - London
-One bed flat, shares public spaces
-In a relationship
+Works in marketing, in a large company  
+Has a degree  
+Lives in a bustling city - London  
+One bed flat, shares public spaces  
+In a relationship  
 
 ## BEHAVIOURS
-Plays video games
-Uses Reddit
-Likes outdoor activities like hiking and cycling
-Interested in popular science
-Raspberry Pi enthusiast
-Likes to feel connected to nature
-Interested in environmental issues
-Likes programmes by Brian Cox
+Plays video games  
+Uses Reddit  
+Likes outdoor activities like hiking and cycling  
+Interested in popular science  
+Raspberry Pi enthusiast  
+Likes to feel connected to nature  
+Interested in environmental issues  
+Likes programmes by Brian Cox  
 
 ## NEEDS AND GOALS
-Needs some downtime from their busy job
-Needs to be engaged and entertained
-Wants to feel like they’re learning something
-Wants to learn more about the universe around them
-Wants to feel connected to something bigger
+Needs some downtime from their busy job  
+Needs to be engaged and entertained  
+Wants to feel like they’re learning something    
+Wants to learn more about the universe around them  
+Wants to feel connected to something bigger  
 
 
 # PROTO PERSONA 3
