@@ -77,6 +77,7 @@ Has parents who want to support her learning and develop interest in science
 Likes sports: swimming, ice skating, roller blading
 
 ## NEEDS AND GOALS
+
 Needs science explained in the form that could be understood for her
 Needs it presented with pictures to keep it interesting
 Needs simple design
