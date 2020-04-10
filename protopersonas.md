@@ -48,7 +48,7 @@ Likes to feel connected to nature
 Interested in environmental issues
 Likes programmes by Brian Cox
 
-## Needs and Goals:
+## NEEDS AND GOALS
 Needs some downtime from their busy job
 Needs to be engaged and entertained
 Wants to feel like they’re learning something
