@@ -12,6 +12,9 @@ A user should be able to:
 2) be able to interact with the page to move through different sections of content
 - Search and display photos from a particular Sol
 - Select and display more info about each rover: Curiosity, Spirit & Opportunity
+- Favourite planets list
+- Displaying selected items
+
  
 ## Extensions
 
