@@ -1,6 +1,7 @@
 ## User needs
 
 ## |As a...  |I want to...   |So that...   |
+|----------|:-------------:|------:|
 |Late High School Student  (persona 4)   |Be able to see what's going on in space right now   |   |  
 |Late High school student  (persona 4)   |Find interesting info to help make uni decision   |Educate myself more on what is out there in the great beyond   |
 |Busy office worker (persona 2)   |Be engaged and entertained   |I can decide what career path I would like to pursue   |
