@@ -1,4 +1,4 @@
-## ARTICLES ABOUT KIDS WEBSITES FEATURES..
+## ARTICLES ABOUT KIDS WEBSITES FEATURES
 
 https://www.canva.com/learn/kids-websites/  
 
