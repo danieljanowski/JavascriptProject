@@ -1,6 +1,6 @@
 ## User needs
 
-|   As a...   |   I want to...   |   So that...   |
+|As a...   |   I want to...   |   So that...   |
 |----------|:-------------:|------:|
 |Mother of two (persona 1)   |Find interesting leisure activities for all the family   |We can enjoy our time together as a family and do something constructive at the same time   |
 |Mother of two (persona1)   |Find a respected, safe and kids-friendly website they can access on their tablets   |They can learn independently in a safe environment   |
