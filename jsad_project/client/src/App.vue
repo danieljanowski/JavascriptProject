@@ -1,6 +1,8 @@
 <template>
   <div id="app">
+    <h1>NASA</h1>
     <planets-grid />
+    <span v-for="photo in nasaData.photos"><img class="center_img" height="250" :src=photo.img_src></span>
   </div>
 </template>
 
@@ -10,7 +12,18 @@ export default {
   name: 'App',
   components: {
     'planets-grid': PlanetsGrid,
+  },
+data(){
+  return{
+    nasaData: [],
   }
+},
+mounted(){
+  fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=hqxy8ha0DRZY5lspLbllJ2Az2ab61mahFiO847ae`)
+  .then(apiData => apiData.json())
+  .then(apiDataJson => this.nasaData = apiDataJson)
+},
+
 }
 </script>
 
