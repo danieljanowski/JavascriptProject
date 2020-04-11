@@ -1,22 +1,15 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <planets-grid />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import PlanetsGrid from './components/PlanetsGrid';
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    HelloWorld
-  },
-  mounted() {
-    fetch('http://localhost:3000/api/planets')
-    .then(res => res.json())
-    .then(data => console.log(data))
+    'planets-grid': PlanetsGrid,
   }
 }
 </script>
