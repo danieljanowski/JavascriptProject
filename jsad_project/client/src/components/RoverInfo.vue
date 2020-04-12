@@ -4,7 +4,7 @@
             (in particular, whether recoverable water may be found on Mars), 
             to characterize the Mars climate <br> and its geology, and then to prepare for a potential human mission to Mars.
         </p>
-        
+
         <div v-if="chosenRover === 'Curiosity'">
             <!-- Curiosity Info -->
             <p>Launch Site: Cape Canaveral LC-41</p>
@@ -27,6 +27,9 @@
             <p>Rover Weight: 185 kg</p>
             <p>Distance Covered: 7.73 km (4.8 mi)</p>
             
+            <p>Fun fact: from late April to early June 2005, Opportunity was perilously lodged in a sand dune, with several wheels buried in the sand. Over a six-week period,
+                 Earth-based physical simulations were performed to decide how best to extract the rover from its position without 
+                risking its permanent immobilization. Successful maneuvering a few centimeters at a time eventually freed the rover, which resumed its travels.</p>
         </div>
 
         <div v-if="chosenRover === 'Opportunity'">
