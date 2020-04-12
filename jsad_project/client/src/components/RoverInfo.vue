@@ -50,7 +50,9 @@
 <script>
 export default {
     name: "rover-info",
-    props: ['chosenRover']
+    props: {
+        chosenRover: String,
+    }
 }
 </script>
 

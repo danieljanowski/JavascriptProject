@@ -11,16 +11,22 @@
                 <h3>Did you know that?</h3>
                 <rover-info :chosenRover="chosenRover"></rover-info>
                 <p>A sol is a solar day on Mars. <br> Your chosen rover "{{ chosenRover }}" has been on Mars for {{handleMaxNumber(chosenRover)}} sols, which is {{ parseFloat(Math.round(handleMaxNumber(chosenRover) * 1.03).toFixed(0)) }} Earth days.</p>
-                 <h2>Choose a sol</h2>
+                 <h3>Choose a sol to display 20 random photos taken on that sol</h3>
             <form v-on:submit.prevent="handleChosenSol">
                 <input v-model="chosenSol" placeholder="1000" type="number" min="0" :max="handleMaxNumber(chosenRover)"  required>            
-                <button type="submit">Load Photos</button>
-                <button type="submit">Refresh Photos</button>
+                <button type="submit" v-if="!nasaData.photos">Show Photos</button>
+                <button type="submit" v-if="nasaData.photos">Show More Photos</button>
+
             </form>
             <br>
         </div>
         <div v-if="nasaData.photos">
             <span v-for="photo in randomPhotos"><img class="center_img" height="250" :src=photo.img_src></span>
+        </div>
+        <div>
+            <form v-on:submit.prevent="handleChosenSol">
+                <button type="submit" v-if="nasaData.photos">Show More Photos</button>
+            </form>
         </div>
     </div>
 </template>
@@ -74,7 +80,6 @@ methods: {
         fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/${this.chosenRover}/photos?sol=${this.chosenSol}&api_key=hqxy8ha0DRZY5lspLbllJ2Az2ab61mahFiO847ae`)
         .then(apiData => apiData.json())
         .then(apiDataJson => this.nasaData = apiDataJson)
-        // .then(() => this.numberPhotos = this.nasaData.photos.length)
         .then(() => this.selectRandomPhotos())
     },
 

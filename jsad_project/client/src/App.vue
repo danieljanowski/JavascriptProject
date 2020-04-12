@@ -11,7 +11,7 @@
 import PlanetsGrid from './components/PlanetsGrid';
 import RoversGrid from './components/RoversGrid';
 export default {
-  name: 'App',
+  name: 'app',
   components: {
     'planets-grid': PlanetsGrid,
     'rovers-grid': RoversGrid,
