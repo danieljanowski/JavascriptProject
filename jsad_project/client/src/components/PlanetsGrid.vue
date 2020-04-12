@@ -1,6 +1,6 @@
 <template lang="html">
 	<div id="planetsGrid">
-		<planet v-for="planet in planets" :planet="planet" />
+		<h1>Planets List</h1>
        <ul>
       <grid-item v-for="(planet, index) in planets" :planet="planet" :key="index"></grid-item>
     </ul>
@@ -35,3 +35,8 @@ export default {
   }
 }
 </script>
+
+
+<style scoped>
+
+</style>
