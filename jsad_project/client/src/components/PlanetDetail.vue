@@ -13,7 +13,10 @@
 <script>
 import PlanetService from '@/services/PlanetService';
 import { eventBus } from '../main'
-// ${this.planet.name} ${this.planet.diameter} ${this.planet.number_of_moons} ${this.planet.distance_from_sun}
+// Name: ${this.planet.name}
+// Diameter :${this.planet.diameter} 
+// Moons :${this.planet.number_of_moons} 
+// Distance FromSun: ${this.planet.distance_from_sun}
 export default {
  name: 'planet-detail',
     props: ['planet'],
