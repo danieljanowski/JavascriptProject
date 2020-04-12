@@ -9,12 +9,13 @@
         <div v-if="chosenRover">
             <form v-on:submit.prevent="handleChosenSol">
                 <h2>Choose a sol</h2>
-                <input v-model="chosenSol" placeholder="1000" type="number" :max="handleMaxNumber(chosenRover)"  required>
+                <input v-model="chosenSol" placeholder="1000" type="number" min="1" :max="handleMaxNumber(chosenRover)"  required>
                 <button type="submit">Load Photos</button>
             </form>
+            <br>
         </div>
-        <div>
-
+        <div v-if="nasaData.photos">
+            <span v-for="photo in nasaData.photos"><img class="center_img" height="250" :src=photo.img_src></span>
         </div>
     </div>
 </template>
@@ -35,15 +36,21 @@ data(){
 
 methods: {
     handleOpportunitySelected () {
-        this.chosenRover = "opportunity"
+        this.chosenRover = "opportunity";
+        this.nasaData = [];
+        this.chosenSol = null
     },
 
     handleCuriositySelected () {
-        this.chosenRover = "curiosity"
+        this.chosenRover = "curiosity";
+        this.nasaData = [];
+        this.chosenSol = null
     },
 
     handleSpiritSelected () {
-        this.chosenRover = "spirit"
+        this.chosenRover = "spirit";
+        this.nasaData = [];
+        this.chosenSol = null
     },
 
     handleChosenSol(){
