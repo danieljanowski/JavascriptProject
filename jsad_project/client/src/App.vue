@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <h1>NASA</h1>
-    <planets-grid />
-    <span v-for="photo in nasaData.photos"><img class="center_img" height="250" :src=photo.img_src></span>
+    <!-- <planets-grid /> -->
+    <rovers-grid></rovers-grid>
+    <!-- <span v-for="photo in nasaData.photos"><img class="center_img" height="250" :src=photo.img_src></span> -->
   </div>
 </template>
 
 <script>
 import PlanetsGrid from './components/PlanetsGrid';
+import RoversGrid from './components/RoversGrid';
 export default {
   name: 'App',
   components: {
     'planets-grid': PlanetsGrid,
+    'rovers-grid': RoversGrid,
   },
 data(){
   return{
