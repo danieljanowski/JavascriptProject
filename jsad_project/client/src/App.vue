@@ -3,7 +3,6 @@
     <h1>NASA</h1>
     <!-- <planets-grid /> -->
     <rovers-grid></rovers-grid>
-    <!-- <span v-for="photo in nasaData.photos"><img class="center_img" height="250" :src=photo.img_src></span> -->
   </div>
 </template>
 

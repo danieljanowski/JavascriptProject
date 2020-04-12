@@ -2,9 +2,9 @@
     <div>
        <h1>Choose the rover</h1>
         <div class="roversgrid">
-            <span class="single-rover"><img @click="handleOpportunitySelected" src="../assets/opportunity.jpg" width="250" alt="">Opportunity</span>
-            <span class="single-rover"><img @click="handleCuriositySelected" src="../assets/curiosity.jpg" width="250" alt="">Curiosity</span>
-            <span class="single-rover"><img @click="handleSpiritSelected" src="../assets/spirit.jpg" width="250" alt="">Spirit</span>
+            <span class="single-rover"><img @click="handleOpportunitySelected" @mouseover="mouseOverOpportunity" src="../assets/opportunity.jpg" width=250px alt="">Opportunity</span>
+            <span class="single-rover"><img @click="handleCuriositySelected" src="../assets/curiosity.jpg" width=250px alt="">Curiosity</span>
+            <span class="single-rover"><img @click="handleSpiritSelected" src="../assets/spirit.jpg" width=250px alt="">Spirit</span>
         </div>
         <div v-if="chosenRover">
                 <h1>{{ chosenRover }}</h1>
@@ -16,12 +16,11 @@
                 <input v-model="chosenSol" placeholder="1000" type="number" min="0" :max="handleMaxNumber(chosenRover)"  required>            
                 <button type="submit" v-if="!nasaData.photos">Show Photos</button>
                 <button type="submit" v-if="nasaData.photos">Show More Photos</button>
-
             </form>
             <br>
         </div>
         <div v-if="nasaData.photos">
-            <span v-for="photo in randomPhotos"><img class="center_img" height="250" :src=photo.img_src></span>
+            <span v-for="photo in randomPhotos" :key="photo.id"><img class="center_img" height="250" :src=photo.img_src></span>
         </div>
         <div>
             <form v-on:submit.prevent="handleChosenSol">
@@ -89,7 +88,11 @@ methods: {
         } else if (rover === "Opportunity"){
             return this.opportunityMax;
         } return this.spiritMax;
-    } 
+    },
+
+    mouseOverOpportunity(){
+        console.log("mouse over!")
+    },
 
 }
 }
@@ -128,7 +131,7 @@ button {
 
 button:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-   background-color: white; 
+  background-color: white; 
   border: none;
   color: red;
 }
