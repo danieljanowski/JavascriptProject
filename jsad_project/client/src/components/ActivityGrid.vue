@@ -17,12 +17,12 @@ export default {
     },
     methods: {
         handleSelectRovers(){
-            this.selectedActivity = "planets";
+            this.selectedActivity = "rovers";
             eventBus.$emit('selected-activity', this.selectedActivity);
         },
         
         handleSelectPlanets(){
-            this.selectedActivity = "rovers";
+            this.selectedActivity = "planets";
             eventBus.$emit('selected-activity', this.selectedActivity);
         }
     },

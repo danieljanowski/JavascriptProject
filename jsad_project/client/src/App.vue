@@ -2,10 +2,10 @@
   <div id="app">
     <h1>NASA</h1>
     <activity-grid/>
-    <planets-grid :planets='planets'/>
-    <planet-detail v-if="selectedPlanet" :planet='selectedPlanet'/>
-    <fav-planets :favPlanet='favPlanets'/>
-    <rovers-grid/>
+    <planets-grid v-if="selectedActivity === 'planets'" :planets='planets'/>
+    <planet-detail v-if="selectedPlanet && selectedActivity === 'planets'" :planet='selectedPlanet'/>
+    <fav-planets v-if="favPlanets.length > 0 && selectedActivity === 'planets'" :favPlanet='favPlanets'/>
+    <rovers-grid v-if="selectedActivity === 'rovers'"/>
   </div>
 </template>
 
@@ -30,7 +30,8 @@ data(){
     nasaData: [],
     planets: [],
     selectedPlanet: null,
-    favPlanets: []    
+    favPlanets: [],
+    selectedActivity: null  
   };
 },
 mounted(){
@@ -40,6 +41,10 @@ mounted(){
 
   eventBus.$on('favourite-planets', (planet) => {
     this.favPlanets.push(planet)
+  })
+
+  eventBus.$on('selected-activity', (activity) => {
+    this.selectedActivity = activity
   })
 }
 
