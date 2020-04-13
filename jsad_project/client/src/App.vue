@@ -4,6 +4,7 @@
     <planets-grid :planets='planets'/>
     <planet-detail v-if="selectedPlanet" :planet='selectedPlanet'/>
     <fav-planets :favPlanet='favPlanets'/>
+    <rovers-grid></rovers-grid>
   </div>
 </template>
 
@@ -11,14 +12,16 @@
 import PlanetsGrid from './components/PlanetsGrid';
 import PlanetDetail from './components/PlanetDetail';
 import PlanetFavourites from './components/PlanetFavourites';
-import { eventBus } from './main.js'
-
+import { eventBus } from './main.js';
+import RoversGrid from './components/RoversGrid';
 export default {
-  name: 'App',
+  name: 'app',
   components: {
     'planets-grid': PlanetsGrid,
     'planet-detail': PlanetDetail,
-    'fav-planets': PlanetFavourites   
+    'fav-planets': PlanetFavourites, 
+    'rovers-grid': RoversGrid,
+
   },
 data(){
   return{
@@ -29,10 +32,6 @@ data(){
   };
 },
 mounted(){
-  // fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=hqxy8ha0DRZY5lspLbllJ2Az2ab61mahFiO847ae`)
-  // .then(apiData => apiData.json())
-  // .then(apiDataJson => this.nasaData = apiDataJson)
-
   eventBus.$on('planet-selected', (planet) => {
     this.selectedPlanet = planet
   })
