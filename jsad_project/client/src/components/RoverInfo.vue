@@ -1,7 +1,5 @@
 <template>
     <div>
-       
-
         <div v-if="chosenRover === 'Curiosity'">
             <!-- Curiosity Info -->
             <p>Launch Site: Cape Canaveral LC-41</p>
@@ -11,10 +9,11 @@
             <p>Rover Weight: 899 kg</p>
             <p>Distance Covered: 21.61 km (13.43 mi)</p>
             <h3>{{ chosenRover }}'s mission info</h3>
-            <p>The car-size Curiosity rover is the centerpiece of NASA's $2.5 billion Mars Science Laboratory (MSL) mission, slated to blast off Saturday (Nov. 26) from Cape Canaveral Air Force Station in Florida.
-             Curiosity's main goal was to assess whether the Red Planet is, or ever was, capable of supporting microbial life.
+            <p>The car-size Curiosity rover is the centerpiece of NASA's $2.5 billion Mars Science Laboratory (MSL) mission; its main goal was to assess whether the Red Planet is, or ever was, capable of supporting microbial life.
              For sheer coolness, it's tough to beat Curiosity's ChemCam. This instrument will fire a laser at Martian rocks from up to 30 feet (9 meters) away and analyze the composition of the vaporized bits.
-            ChemCam will thus enable Curiosity to study rocks that are out of reach of its flexible robotic arm.
+            ChemCam will thus enable Curiosity to study rocks that are out of reach of its flexible robotic arm. <br>
+            In addition, a US penny is on-board NASA's Curiosity rover that is scheduled to land on Mars in August.
+            The 1909 penny commemorating the centennial of President Lincoln's birth will act as a calibration target to help scientists and the public to gauge the size of objects on Mars.
             </p>
             <h3>Did you know that...</h3>
         </div>

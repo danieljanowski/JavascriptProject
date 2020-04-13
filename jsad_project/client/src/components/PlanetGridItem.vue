@@ -1,7 +1,7 @@
 <template>
     <div id="planet-selector">
     <li v-on:click="handleClick">{{ planet.name }}
-        <span><img :src="prepareImgAddress()" /></span>
+        <span><img :src="prepareImgAddress()" height="70px" /></span>
     </li>
     </div>
 </template>
