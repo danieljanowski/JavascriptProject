@@ -6,7 +6,7 @@
     <p>Number of moons: {{ planet.number_of_moons }}</p>
     <p>Day length in Earth hours: {{ planet.day_length }}</p>
     <p>Weight: {{ planet.weight }}</p>
-    <button v-on:click="handleButton">Add To Favourites</button>
+    <button v-on:click="handleFavouriteClick">Add To Favourites</button>
   </div>
 </template>
 
@@ -21,8 +21,12 @@ export default {
  name: 'planet-detail',
     props: ['planet'],
     methods: {
-        handleButton(){
-          eventBus.$emit('favourite-planets', `name: ${this.planet.name}, diameter: ${this.planet.diameter}`)
+        // handleButton(){
+        //   eventBus.$emit('favourite-planets', `| ${this.planet.name} | Diameter: ${this.planet.diameter}, Distance from Sun: ${this.planet.distance_from_sun}, 
+        //   Number of moons: ${this.planet.number_of_moons}, Day length in Earth hours: ${this.planet.day_length}, Weight: ${this.planet.weight}`)
+        // }
+        handleFavouriteClick(){
+          eventBus.$emit('favourite-planets', this.planet)
         }
     }
 }

@@ -1,5 +1,9 @@
 <template>
-  <li v-on:click="handleClick">{{ planet.name }}</li>
+    <div id="planet-selector">
+    <li v-on:click="handleClick">{{ planet.name }}
+        <span><img :src="prepareImgAddress()" /></span>
+    </li>
+    </div>
 </template>
 
 <script>
@@ -11,12 +15,22 @@ export default {
     methods: {
         handleClick(){
             eventBus.$emit('planet-selected', this.planet)
-        }
+        },
+        prepareImgAddress(){
+            return `assets/${this.planet.icon}`
+        },
     }
 
 }
 </script>
 
 <style scoped>
+#planet-selector{background-color: #27292D;
+                        color: #EEEEEE;
+                        border-style: none;
+                        padding: 2%;
+                        width: 100%;
+                        
+}
 
 </style>

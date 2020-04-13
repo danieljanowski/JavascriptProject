@@ -38,5 +38,7 @@ export default {
 
 
 <style scoped>
-
+ul{
+  display: flex;
+}
 </style>
