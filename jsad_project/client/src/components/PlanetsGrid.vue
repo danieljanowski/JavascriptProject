@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import Planet from './Planet.vue';
 import PlanetService from '../services/PlanetService.js';
 import GridItem from './PlanetGridItem.vue'
 
@@ -21,7 +20,6 @@ export default {
     }
   },
   components: {
-      'planet': Planet,
       'grid-item': GridItem
   },
   mounted() {

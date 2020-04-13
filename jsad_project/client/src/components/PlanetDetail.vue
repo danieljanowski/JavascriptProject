@@ -13,18 +13,11 @@
 <script>
 import PlanetService from '@/services/PlanetService';
 import { eventBus } from '../main'
-// Name: ${this.planet.name}
-// Diameter :${this.planet.diameter} 
-// Moons :${this.planet.number_of_moons} 
-// Distance FromSun: ${this.planet.distance_from_sun}
+
 export default {
  name: 'planet-detail',
     props: ['planet'],
     methods: {
-        // handleButton(){
-        //   eventBus.$emit('favourite-planets', `| ${this.planet.name} | Diameter: ${this.planet.diameter}, Distance from Sun: ${this.planet.distance_from_sun}, 
-        //   Number of moons: ${this.planet.number_of_moons}, Day length in Earth hours: ${this.planet.day_length}, Weight: ${this.planet.weight}`)
-        // }
         handleFavouriteClick(){
           eventBus.$emit('favourite-planets', this.planet)
         }

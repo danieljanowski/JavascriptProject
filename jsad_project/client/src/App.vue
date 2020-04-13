@@ -1,10 +1,11 @@
 <template>
   <div id="app">
     <h1>NASA</h1>
+    <activity-grid/>
     <planets-grid :planets='planets'/>
     <planet-detail v-if="selectedPlanet" :planet='selectedPlanet'/>
     <fav-planets :favPlanet='favPlanets'/>
-    <rovers-grid></rovers-grid>
+    <rovers-grid/>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import PlanetDetail from './components/PlanetDetail';
 import PlanetFavourites from './components/PlanetFavourites';
 import { eventBus } from './main.js';
 import RoversGrid from './components/RoversGrid';
+import ActivityGrid from './components/ActivityGrid';
 export default {
   name: 'app',
   components: {
@@ -21,7 +23,7 @@ export default {
     'planet-detail': PlanetDetail,
     'fav-planets': PlanetFavourites, 
     'rovers-grid': RoversGrid,
-
+    'activity-grid': ActivityGrid
   },
 data(){
   return{
