@@ -27,6 +27,7 @@
                 <input v-model.number="age" placeholder="Your age on Earth" type="number"  required>            
                 
     </div>
+    <!-- <planet-info :selectedPlanet='selectedPlanet'></planet-info> -->
   </div>
 </template>
 
@@ -41,9 +42,11 @@ export default {
  data() {
    return {
     weight:  null,
-    age: null
+    age: null,
+    selectedPlanet: null
     }
  },
+   
     props: ['planet'],
     methods: {
         handleFavouriteClick(){

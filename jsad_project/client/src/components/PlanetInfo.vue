@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div v-if="chosenPlanet === 'Mercury'">
+        <div v-if="selectedPlanet.name === 'Mercury'">
             <!-- Mercury Info -->
             <h1>Fun Facts about Mercury!</h1>
             <p>It does not have any moons or rings.</p>
@@ -10,13 +10,13 @@
             <p>It is the second densest planet.</p>
             <p>It is the second hottest planet</p>
             <p>Only two spacecraft have ever visited Mercury.</p>
-            <h3>{{ chosenPlanet }}'s bio</h3>
+            <h3>{{ selectedPlanet.name }}'s bio</h3> 
             <p>Mercury is the smallest planet in our solar system. It’s just a little bigger than Earth’s moon. It is the closest planet to the sun, but it’s actually not the hottest. Venus is hotter.
                 Along with Venus, Earth, and Mars, Mercury is one of the rocky planets. It has a solid surface that is covered with craters. It has a thin atmosphere, and it doesn’t have any moons. Mercury likes to keep things simple.
             </p>
         </div>
 
-        <div v-if="chosenPlanet === 'Venus'">
+        <div v-if="selectedPlanet.name === 'Venus'">
             <!-- Venus Info -->
             <p>It does not have any moons or rings</p>
             <p>It is nearly as big as the Earth with a diameter of 12,104 km</p>
@@ -24,13 +24,13 @@
             <p>The surface temperature on Venus can reach 471 °C.</p>
             <p>It is the second brightest object in the night sky.</p>
             <p>It is the hottest planet in our solar system</p>
-            <h3>{{ chosenPlanet }}'s Bio</h3>
+            <h3>{{ selectedPlanet.name }}'s Bio</h3>
             <p>Even though Venus isn't the closest planet to the sun, it is still the hottest. It has a thick atmosphere full of the greenhouse gas carbon dioxide and clouds made of sulfuric acid. The gas traps heat and keeps Venus toasty warm. In fact, it's so hot on Venus, metals like lead would be puddles of melted liquid. 
                 Venus looks like a very active planet. It has mountains and volcanoes. Venus is similar in size to Earth. Earth is just a little bit bigger.
             </p>
         </div>
 
-        <div v-if="chosenPlanet === 'Earth'">
+        <div v-if="selectedPlanet.name === 'Earth'">
             <!-- Earth Info -->
             <p>Its rotation is gradually slowing.</p>
             <p>The Earth was once believed to be the centre of the universe.</p>
@@ -38,13 +38,13 @@
             <p>There is only one natural satellite (moon) of the planet Earth.</p>
             <p>The Earth is the densest planet in the Solar System</p>
             <p>Earth is the only planet not named after a god.</p>
-             <h3>{{ chosenPlanet }}'s Bio</h3>
+             <h3>{{ selectedPlanet.name }}'s Bio</h3>
             <p>Our home planet Earth is a rocky, terrestrial planet. It has a solid and active surface with mountains, valleys, canyons, plains and so much more. Earth is special because it is an ocean planet. Water covers 70% of Earth's surface.
                 Our atmosphere is made mostly of nitrogen and has plenty of oxygen for us to breathe. The atmosphere also protects us from incoming meteoroids, most of which break up in our atmosphere before they can strike the surface as meteorites
             </p>
         </div>
 
-        <div v-if="chosenPlanet === 'Luna'">
+        <div v-if="selectedPlanet.name === 'Luna'">
             <!-- Luna Info -->
             <p>It is the fifth largest moon in the Solar System</p>
             <p>The Moon orbits the Earth every 27.3 days.</p>
@@ -52,14 +52,14 @@
             <p>The first person to set foot on the Moon was Neil Armstrong.</p>
             <p>Although research is continuing, most scientists agree that the Moon features small amounts of water.</p>
             <p>It is very hot during the day but very cold at night. The average surface temperature of the Moon is 107 degrees Celsius during the day and -153 degrees Celsius at night.</p>
-             <h3>{{ chosenPlanet }}'s Bio</h3>
+             <h3>{{ selectedPlanet.name }}'s Bio</h3>
             <p>Earth has just one moon – a rocky, cratered place, roughly a quarter the size of Earth and an average of 238,855 miles away. The Moon can be seen with the naked eye most nights as it traces its 27-day orbit around our planet.
                 From Earth, it might look like the Moon is changing shape each night – from a tiny sliver to a half moon to a full moon and back again. What’s actually happening is that from our spot on Earth, we see different parts of the Moon lit up by the Sun as the Moon travels in its orbit.
             </p>
         </div>
 
 
-        <div v-if="chosenPlanet === 'Mars'">
+        <div v-if="selectedPlanet.name === 'Mars'">
             <!-- Mars Info -->
             <p>It and Earth have approximately the same landmass.</p>
             <p>It is home to the tallest mountain in the solar system (21km high)</p>
@@ -67,14 +67,14 @@
             <p>It has the largest dust storms in the solar system.</p>
             <p>Pieces of Mars have fallen to Earth.</p>
             <p>There are signs of liquid water on Mars.</p>
-             <h3>{{ chosenPlanet }}'s Bio</h3>
+             <h3>{{ selectedPlanet.name }}'s Bio</h3>
             <p>Mars is a cold desert world. It is half the size of Earth. Mars is sometimes called the Red Planet. It's red because of rusty iron in the ground.
                 Like Earth, Mars has seasons, polar ice caps, volcanoes, canyons, and weather. It has a very thin atmosphere made of carbon dioxide, nitrogen, and argon.
                 There are signs of ancient floods on Mars, but now water mostly exists in icy dirt and thin clouds. On some Martian hillsides, there is evidence of liquid salty water in the ground.
             </p>
         </div>
 
-         <div v-if="chosenPlanet === 'Jupiter'">
+         <div v-if="selectedPlanet.name === 'Jupiter'">
             <!-- Jupiter Info -->
             <p>The ancient Babylonians were the first to record their sightings of Jupiter.</p>
             <p>It has unique cloud features.</p>
@@ -82,7 +82,7 @@
             <p>Its interior is made of rock, metal, and hydrogen compounds</p>
             <p>Its moon "Ganymede" is the largest moon in the solar system</p>
             <p>Eight spacecraft have visited Jupiter.</p>
-             <h3>{{ chosenPlanet }}'s Bio</h3>
+             <h3>{{ selectedPlanet.name }}'s Bio</h3>
             <p>Jupiter is the biggest planet in our solar system. It's similar to a star, but it never got big enough to start burning. It is covered in swirling cloud stripes.
                  It has big storms like the Great Red Spot, which has been going for hundreds of years. 
                  Jupiter is a gas giant and doesn't have a solid surface, but it may have a solid inner core about the size of Earth.
@@ -90,7 +90,7 @@
             </p>
         </div>
 
-        <div v-if="chosenPlanet === 'Saturn'">
+        <div v-if="selectedPlanet.name === 'Saturn'">
             <!-- saturn Info -->
             <p>It can be seen with the naked eye.</p>
             <p>It was known to the ancients, including the Babylonians and Far Eastern observers.</p>
@@ -98,7 +98,7 @@
             <p>It has 150 moons and smaller moonlets.</p>
             <p>It is the flattest planet.</p>
             <p>Four spacecraft have visited Saturn.</p>
-             <h3>{{ chosenPlanet }}'s Bio</h3>
+             <h3>{{ selectedPlanet.name }}'s Bio</h3>
             <p>Saturn isn’t the only planet to have rings, but it definitely has the most beautiful ones.
                  The rings we see are made of groups of tiny ringlets that surround Saturn. They’re made of chunks of ice and rock.
                  Like Jupiter, Saturn is mostly a ball of hydrogen and helium.
@@ -107,7 +107,7 @@
             </p>
         </div>
 
-        <div v-if="chosenPlanet === 'Uranus'">
+        <div v-if="selectedPlanet.name === 'Uranus'">
             <!-- Uranus Info -->
             <p>It was officially discovered by Sir William Herschel in 1781.</p>
             <p>It is often referred to as an “ice giant” planet.</p>
@@ -116,14 +116,14 @@
             <p>Uranus is the largest shit hole in the solar system</p>
             <p>It has two sets of very thin dark coloured rings.</p>
             <p>Only one spacecraft has flown by Uranus.</p>
-             <h3>{{ chosenPlanet }}'s Bio</h3>
+             <h3>{{ selectedPlanet.name }}'s Bio</h3>
             <p>Uranus is made of water, methane, and ammonia fluids above a small rocky center. 
                 Its atmosphere is made of hydrogen and helium like Jupiter and Saturn, but it also has methane. The methane makes Uranus blue.
                 Uranus also has faint rings. The inner rings are narrow and dark. The outer rings are brightly colored and easier to see. Like Venus, Uranus rotates in the opposite direction as most other planets.
                 And unlike any other planet, Uranus rotates on its side.
             </p>
         </div>
-             <div v-if="chosenPlanet === 'Neptune'">
+             <div v-if="selectedPlanet.name === 'Neptune'">
             <!-- Neptune Info -->
             <p>It is the most distant planet from the Sun.</p>
             <p>It is the smallest gas giant.</p>
@@ -131,7 +131,7 @@
             <p>Its moons are named after characters created by William Shakespeare and Alexander Pope.</p>
             <p>It has a very active climate. Winds can reach speeds of 600 meters a second</p>
             <p>Only one spacecraft has flown by Neptune.</p>
-             <h3>{{ chosenPlanet }}'s Bio</h3>
+             <h3>{{ selectedPlanet.name }}'s Bio</h3>
             <p>Neptune is dark, cold, and very windy. It's the last of the planets in our solar system. It's more than 30 times as far from the sun as Earth
                  Neptune is very similar to Uranus. It's made of a thick fog of water, ammonia, and methane over an Earth-sized solid center. Its atmosphere is made of hydrogen,
                   helium, and methane. The methane gives Neptune the same blue color as Uranus.
@@ -139,7 +139,7 @@
             </p>
         </div>
 
-         <div v-if="chosenPlanet === 'Pluto'">
+         <div v-if="selectedPlanet.name === 'Pluto'">
             <!-- Pluto Info -->
             <p>It was discovered on February 18th, 1930 by the Lowell Observatory</p>
             <p>It was reclassified from a planet to a dwarf planet in 2006.</p>
@@ -147,7 +147,7 @@
             <p>It has a eccentric and inclined orbit. This means it is sometimes closer to the sun than Neptune</p>
             <p>It is named after the Roman god of the underworld.</p>
             <p>It has been visited by one spacecraft.</p>
-             <h3>{{ chosenPlanet }}'s Bio</h3>
+             <h3>{{ selectedPlanet.name }}'s Bio</h3>
             <p>Pluto is categorized as a dwarf planet. In 2006, Pluto was categorized with three other objects in the solar system that are about the same small size as Pluto:
                  Ceres, Makemake and Eris. These objects, along with Pluto,
                  are much smaller than the "other" planets.
@@ -161,7 +161,7 @@
 export default {
     name: "planet-info",
     props: {
-        chosenPlanet: String,
+        selectedPlanet: Object,
     }
 }
 </script>

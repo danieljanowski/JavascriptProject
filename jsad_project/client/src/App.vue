@@ -4,6 +4,7 @@
     <activity-grid/>
     <planets-grid v-if="selectedActivity === 'planets'" :planets='planets'/>
     <planet-detail v-if="selectedPlanet && selectedActivity === 'planets'" :planet='selectedPlanet'/>
+    <planet-info :selectedPlanet='selectedPlanet'/>
     <fav-planets v-if="favPlanets.length > 0 && selectedActivity === 'planets'" :favPlanet='favPlanets'/>
     <rovers-grid v-if="selectedActivity === 'rovers'"/>
   </div>
@@ -13,9 +14,11 @@
 import PlanetsGrid from './components/PlanetsGrid';
 import PlanetDetail from './components/PlanetDetail';
 import PlanetFavourites from './components/PlanetFavourites';
-import { eventBus } from './main.js';
 import RoversGrid from './components/RoversGrid';
 import ActivityGrid from './components/ActivityGrid';
+import PlanetInfo from './components/PlanetInfo';
+
+import { eventBus } from './main.js';
 export default {
   name: 'app',
   components: {
@@ -23,7 +26,8 @@ export default {
     'planet-detail': PlanetDetail,
     'fav-planets': PlanetFavourites, 
     'rovers-grid': RoversGrid,
-    'activity-grid': ActivityGrid
+    'activity-grid': ActivityGrid,
+    'planet-info': PlanetInfo
   },
 data(){
   return{
@@ -31,7 +35,8 @@ data(){
     planets: [],
     selectedPlanet: null,
     favPlanets: [],
-    selectedActivity: null  
+    selectedActivity: null 
+     
   };
 },
 mounted(){
