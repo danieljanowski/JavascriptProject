@@ -1,13 +1,9 @@
 <template>
 
-  <div style="height: 500px; width: 80%">
-    <div style="height: 200px overflow: auto;">
-        {{issPosition.latitude}}, {{issPosition.longitude}}
-      <p>First marker is placed at {{ withPopup.lat }}, {{ withPopup.lng }}</p>
-      <p>Center is at {{ currentCenter }} and the zoom is: {{ currentZoom }}</p>
-      <button @click="showLongText">
-        Toggle long popup
-      </button>
+  <div class="iss-map" style="height:800px; width: 80%; align: center;">
+    <div style="height: 200px; overflow: auto">
+        <h3>Current ISS position: {{issPosition.latitude}}, {{issPosition.longitude}}</h3>
+        <p>Current zoom: {{ currentZoom }}</p>
       <button @click="showMap = !showMap">
         Toggle map
       </button>
@@ -25,28 +21,11 @@
         :url="url"
         :attribution="attribution"
       />
-      <l-marker :lat-lng="withPopup">
-        <l-popup>
-          <div @click="innerClick">
-            I AM THE ISS POPUP
-            <p v-show="showParagraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              sed pretium nisl, ut sagittis sapien. Sed vel sollicitudin nisi.
-              Donec finibus semper metus id malesuada.
-            </p>
-          </div>
-        </l-popup>
-      </l-marker>
+
       <l-marker :lat-lng="withTooltip">
         <l-tooltip :options="{ permanent: true, interactive: true }">
-          <div @click="innerClick">
-            I AM THE ISS, WATCH ME MOVE
-            <p v-show="showParagraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-              sed pretium nisl, ut sagittis sapien. Sed vel sollicitudin nisi.
-              Donec finibus semper metus id malesuada.
-            </p>
-          </div>
+            <!-- I AM THE ISS, WATCH ME MOVE -->
+            <img width="50px" src="../assets/SpaceStationIcon.png"/>
         </l-tooltip>
       </l-marker>
     </l-map>
@@ -72,14 +51,10 @@ export default {
   data() {
     return {
       zoom: 4,
-    //   center: latLng(parseFloat(`${this.issPosition.latitude}`), parseFloat(`${this.issPosition.longitude}`)),
       url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-      attribution:
-        '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
       withPopup: latLng(parseFloat(`${this.issPosition.latitude}`), parseFloat(`${this.issPosition.longitude}`)),
-    //   withTooltip: latLng(parseFloat(`${this.issPosition.latitude}`), parseFloat(`${this.issPosition.longitude}`)),
       currentZoom: 4,
-      currentCenter: latLng(parseFloat(`${this.issPosition.latitude}`), parseFloat(`${this.issPosition.longitude}`)),
+      center: latLng(parseFloat(`${this.issPosition.latitude}`), parseFloat(`${this.issPosition.longitude}`)),
       showParagraph: false,
       mapOptions: {
         zoomSnap: 0.5
@@ -94,15 +69,12 @@ export default {
     centerUpdate(center) {
       this.currentCenter = center;
     },
-    showLongText() { 
-      this.showParagraph = !this.showParagraph;
+    getLocation(){
+      
     },
-    innerClick() {
-      alert("Click!");
-    }
   },
   computed: {
-    center: function() {
+    currentCenter: function() {
         return latLng(parseFloat(`${this.issPosition.latitude}`), parseFloat(`${this.issPosition.longitude}`))
     },
 
@@ -112,3 +84,13 @@ export default {
     },
 };
 </script>
+
+<style scoped>
+  
+.iss-map {
+  justify-content: center;
+  align-items: center;
+  
+  }
+
+</style>
