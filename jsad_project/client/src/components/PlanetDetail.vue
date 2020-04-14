@@ -73,7 +73,7 @@ export default {
                         flex-direction: row;
                         justify-content: space-evenly;
                         margin:2%;
-                        }
+                        } 
     h2{color: #2A73C1;}
     h3{color: #2A73C1;
     font-size: 1.5em;}

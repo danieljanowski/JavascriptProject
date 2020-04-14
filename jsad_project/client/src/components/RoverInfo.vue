@@ -93,7 +93,6 @@ export default {
  .info-container{ 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .mission-info {
@@ -103,8 +102,8 @@ export default {
   flex-direction: column;
   /* border-radius: 10%; */
   color: #2A73C1;
-  width: 150px;
-  height: 300;
+  width: 200px;
+  height: 400px;
 }
 
 .key-facts{
