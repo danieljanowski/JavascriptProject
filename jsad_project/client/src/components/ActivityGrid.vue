@@ -1,7 +1,7 @@
 <template lang="html">
     <div>
-        <span><img @click="handleSelectRovers" src="../assets/opportunity.jpg">Rovers</span>
-        <span><img @click="handleSelectPlanets" src="../assets/spirit.jpg">Planets</span>
+        <span><img id="rover-button" @click="handleSelectRovers" src="../assets/roverSelect.png" height="140px">Rovers</span>
+        <span><img id="planets-button" @click="handleSelectPlanets" src="../assets/planetSelect.png" height="140px" >Planets</span>
     </div>
 </template>
 
@@ -31,5 +31,10 @@ export default {
 </script>
 
 <style scoped>
-
+#planets-button{border-radius: 50%;
+                background-color: orange;
+                padding: 2%;}
+#rover-button{border-radius: 50%;
+                background-color: orange;
+                padding: 2%;}
 </style>

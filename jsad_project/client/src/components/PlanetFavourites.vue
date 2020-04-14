@@ -2,7 +2,7 @@
     <div class="fav-container" v-if="favPlanet">
         <h1>Favourite Planets</h1>
         <ul v-for="(planet, index) in favPlanet" :planet="planet" :key="index">
-           <li>{{planet.name}}</li>
+           <li><h3>{{planet.name}}</h3></li>
            <li>Diameter: {{planet.diameter}}</li>
            <li>Distance from Sun: {{ planet.distance_from_sun }}</li>
            <li>Number of moons: {{ planet.number_of_moons }}</li>
