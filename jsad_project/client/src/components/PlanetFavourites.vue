@@ -3,8 +3,8 @@
         <h1>Favourite Planets</h1>
         <ul v-for="(planet, index) in favPlanet" :planet="planet" :key="index">
            <h1>{{planet.name}}</h1>
-           <li>Diameter in km: {{planet.diameter}}</li>
-           <li>Distance from Sun in million of km: {{ planet.distance_from_sun }}</li>
+           <li>Diameter in km: {{planet.diameter}}</li><br>
+           <li>Distance from Sun in million of km: {{ planet.distance_from_sun }}</li><br>
            <li>Number of moons: {{ planet.number_of_moons }}</li>
            <li>Day length in Earth hours: {{ planet.day_length }}</li>
            <li>Weight ratio to 1 kg: {{ planet.weight }}</li>
@@ -38,7 +38,7 @@ export default {
                         
 ul {
   list-style-type: none;
-   padding: 10%;
-   margin: 20px;
+   padding: 2%;
+   margin: 2%;
 }
 </style>
