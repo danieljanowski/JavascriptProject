@@ -34,12 +34,18 @@ export default {
   flex-direction: column;
   border-radius: 10%;
   color: #2A73C1;
+  margin-top: 50px;
+  padding: 1%;
+  margin-left: 7%;
+  margin-right: 7%;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
 }
                         
 ul {
   list-style-type: none;
-   padding: 2%;
-   margin: 2%;
    margin-bottom: 50px;
+   text-align: center; 
 }
 </style>

@@ -17,8 +17,10 @@
         <div v-if="chosenRover">
                 <h1 id="element" v-scroll-to="'.single-rover'">{{ chosenRover }}</h1>
                 <rover-info :chosenRover="chosenRover"></rover-info>
-                <p>A sol is a solar day on Mars. <br> Your chosen rover "{{ chosenRover }}" has been on Mars for {{handleMaxNumber(chosenRover)}} sols, which is {{ parseFloat(Math.round(handleMaxNumber(chosenRover) * 1.03).toFixed(0)) }} Earth days.</p>
-                 <h3>Choose a sol to display 20 random photos taken on that sol</h3>
+                <div class="did-you-know-info">
+                    <p>A sol is a solar day on Mars. <br> Your chosen rover "{{ chosenRover }}" has been on Mars for {{handleMaxNumber(chosenRover)}} sols, which is {{ parseFloat(Math.round(handleMaxNumber(chosenRover) * 1.03).toFixed(0)) }} Earth days.</p>
+                   <h3>Choose a sol to display 20 random photos taken on that sol</h3>
+                </div>
             <form v-on:submit.prevent="handleChosenSol">
                 <input v-model="chosenSol" placeholder="1000" type="number" min="0" :max="handleMaxNumber(chosenRover)"  required>            
                 <button type="submit">Show Photos</button>
@@ -140,6 +142,15 @@ computed: {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.did-you-know-info{
+  padding: 2%;
+  background-color: silver;
+  display: flex;
+  flex-direction: column;
+  /* border-radius: 10%; */
+  color: #2A73C1;
 }
 
 h1 {
