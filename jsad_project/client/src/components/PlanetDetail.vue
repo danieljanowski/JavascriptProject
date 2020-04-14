@@ -13,8 +13,10 @@
   </div>
 </template>
 
+
 <script>
 import PlanetService from '@/services/PlanetService';
+
 import { eventBus } from '../main'
 
 export default {
@@ -24,7 +26,8 @@ export default {
         handleFavouriteClick(){
           eventBus.$emit('favourite-planets', this.planet)
         }
-    }
+    },
+   
 }
 </script>
 
