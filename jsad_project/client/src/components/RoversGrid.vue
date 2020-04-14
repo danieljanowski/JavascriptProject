@@ -26,14 +26,21 @@
             </form>
             <br>
         </div>
-        <div v-if="nasaData.photos">
-                <span v-for="photo in randomPhotos"><img class="center_img" height="250" :src=photo.img_src>{{photo.camera.name}}</span>
+        <div class="photo-grid" v-if="nasaData.photos">
+                <span v-for="photo in randomPhotos">
+                    <div class="single-rover-photo-container">
+                        <img class="center_img" height="250" :src=photo.img_src>
+                            <p>{{photo.camera.name}}</p>
+                    </div>
+                </span>
         </div>
         <div>
             <form v-on:submit.prevent="selectRandomPhotos">
                 <button type="submit" v-if="nasaData.photos">Show More Photos</button>
+                 <button type="submit" v-scroll-to="'#element'" v-if="nasaData.photos">Back to top</button>
             </form>
         </div>
+
     </div>
 </template>
 
@@ -116,6 +123,23 @@ computed: {
     flex-direction: column;
     margin-right: 20px;
     margin-left: 20px;
+}
+
+.single-rover-photo-container{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;   
+}
+
+
+.photo-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 h1 {

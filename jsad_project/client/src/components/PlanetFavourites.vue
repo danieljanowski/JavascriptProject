@@ -22,9 +22,7 @@ export default {
     props:['favPlanet'],
     components:{
         "planet-detail": PlanetDetail
-    }, 
-    
-    
+    }
 }
 </script>
 
