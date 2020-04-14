@@ -9,13 +9,13 @@
          </p>
        <h1>Choose the rover</h1>
         <div class="roversgrid">
-            <span class="single-rover"><img class="rover-profile-image" @click="handleOpportunitySelected" src="../assets/opportunity.jpg" alt="">Opportunity</span>
-            <span class="single-rover"><img class="rover-profile-image" @click="handleCuriositySelected" src="../assets/curiosity.jpg" width=250px alt="">Curiosity</span>
-            <span class="single-rover"><img class="rover-profile-image" @click="handleSpiritSelected" src="../assets/spirit.jpg" width=250px alt="">Spirit</span>
+            <span class="single-rover" v-scroll-to="'#element'"><img class="rover-profile-image" @click="handleOpportunitySelected" src="../assets/opportunity.jpg" alt="">Opportunity</span>
+            <span class="single-rover" v-scroll-to="'#element'"><img class="rover-profile-image" @click="handleCuriositySelected" src="../assets/curiosity.jpg" width=250px alt="">Curiosity</span>
+            <span class="single-rover" v-scroll-to="'#element'"><img class="rover-profile-image" @click="handleSpiritSelected" src="../assets/spirit.jpg" width=250px alt="">Spirit</span>
        
         </div>
         <div v-if="chosenRover">
-                <h1>{{ chosenRover }}</h1>
+                <h1 id="element" v-scroll-to="'.single-rover'">{{ chosenRover }}</h1>
                 <rover-info :chosenRover="chosenRover"></rover-info>
                 <p>A sol is a solar day on Mars. <br> Your chosen rover "{{ chosenRover }}" has been on Mars for {{handleMaxNumber(chosenRover)}} sols, which is {{ parseFloat(Math.round(handleMaxNumber(chosenRover) * 1.03).toFixed(0)) }} Earth days.</p>
                  <h3>Choose a sol to display 20 random photos taken on that sol</h3>
@@ -27,7 +27,7 @@
             <br>
         </div>
         <div v-if="nasaData.photos">
-            <span v-for="photo in randomPhotos"><img class="center_img" height="250" :src=photo.img_src></span>
+                <span v-for="photo in randomPhotos"><img class="center_img" height="250" :src=photo.img_src>{{photo.camera.name}}</span>
         </div>
         <div>
             <form v-on:submit.prevent="selectRandomPhotos">
@@ -110,6 +110,7 @@ computed: {
     flex-direction: row;
     justify-content: center;
 }
+
 .single-rover{
     display: flex;
     flex-direction: column;

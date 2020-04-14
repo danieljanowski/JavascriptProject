@@ -15,6 +15,7 @@
             In addition, a US penny is on-board NASA's Curiosity rover that is scheduled to land on Mars in August.
             The 1909 penny commemorating the centennial of President Lincoln's birth will act as a calibration target to help scientists and the public to gauge the size of objects on Mars.
             </p>
+            <span><img src="../assets/curiosity-cameras.jpg" alt="" width="500px"></span>
             <h3>Did you know that...</h3>
         </div>
 
