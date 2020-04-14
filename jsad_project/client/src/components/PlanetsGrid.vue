@@ -1,6 +1,6 @@
 <template lang="html">
 	<div id="planetsGrid">
-		<h1>Planets List</h1>
+		<h1>Pick a planet!</h1>
        <ul>
       <grid-item v-for="(planet, index) in planets" :planet="planet" :key="index"></grid-item>
     </ul>

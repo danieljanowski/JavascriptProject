@@ -1,28 +1,29 @@
 <template>
   <div class="detail-container" :planet="planet">
 
-     <div id="weight-calculator">
+     <div id="weight-calculator" v-if="planet.name  !== 'Earth'"> 
       <h2>Calculate your weight on {{ planet.name }}!</h2>
-                <img id="weight-icon" src="../assets/weightIcon.png" alt="" width="100px">
-                <h3>{{parseFloat((calculateWeight).toFixed(2))}}</h3>
+                <img id="weight-icon" src="../assets/scaleIcon.png" alt="" width="120px">
+                <h3>{{parseFloat((calculateWeight).toFixed(2))}} Kg</h3>
                 <input v-model.number="weight" placeholder="Your weight in kilos" type="number"  required>                    
     </div>
 
      <div id="detail-info">
       <h1>{{planet.name}}</h1>
-        <p>Diameter: {{ planet.diameter }}</p>
-        <p>Distance from Sun: {{ planet.distance_from_sun }}</p>
+        <p>Diameter in km: {{ planet.diameter }}</p>
+        <p>Distance from Sun in million of km: {{ planet.distance_from_sun }}</p>
         <p>Number of moons: {{ planet.number_of_moons }}</p>
         <p>Day length in Earth hours: {{ planet.day_length }}</p>
+        <p>Weight ratio to 1 kg: {{ planet.weight }}</p>
         
     <button v-on:click="handleFavouriteClick">Add To Favourites</button>
     </div>
 
-  
-    <div id="age-calculator">
+   
+    <div id="age-calculator" v-if="planet.name  !== 'Earth'">
        <h2>Calculate your age on {{ planet.name }}!</h2>
-                <img id="age-icon" src="../assets/ageIcon.png" alt="" width="100px">
-                <h3>{{parseFloat((calculateAge).toFixed(2))}}</h3>
+                <img id="age-icon" src="../assets/ageIcon.png" alt="" width="120px">
+                <h3>{{parseFloat((calculateAge).toFixed(2))}} Years</h3>
                 <input v-model.number="age" placeholder="Your age on Earth" type="number"  required>            
                 
     </div>
@@ -125,6 +126,9 @@ export default {
   color: #2A73C1;
 }
 
+.hide{
+  display: none;
+}
 
 </style>
 
