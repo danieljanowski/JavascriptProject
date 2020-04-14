@@ -5,9 +5,9 @@
            <h1>{{planet.name}}</h1>
            <li>Diameter in km: {{planet.diameter}}</li><br>
            <li>Distance from Sun in million of km: {{ planet.distance_from_sun }}</li><br>
-           <li>Number of moons: {{ planet.number_of_moons }}</li>
-           <li>Day length in Earth hours: {{ planet.day_length }}</li>
-           <li>Weight ratio to 1 kg: {{ planet.weight }}</li>
+           <li>Number of moons: {{ planet.number_of_moons }}</li><br>
+           <li>Day length in Earth hours: {{ planet.day_length }}</li><br>
+           <li>Weight ratio to 1 kg: {{ planet.weight }}</li><br>
         </ul>
     </div>
 </template>
@@ -40,5 +40,6 @@ ul {
   list-style-type: none;
    padding: 2%;
    margin: 2%;
+   margin-bottom: 50px;
 }
 </style>
