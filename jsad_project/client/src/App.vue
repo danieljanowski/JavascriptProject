@@ -1,9 +1,11 @@
 <template>
   <div id="app">
     <h1>NASA</h1>
-    <planets-grid :planets='planets'/>
-    <planet-detail v-if="selectedPlanet" :planet='selectedPlanet'/>
-    <fav-planets :favPlanet='favPlanets'/>
+    <activity-grid/>
+    <planets-grid v-if="selectedActivity === 'planets'" :planets='planets'/>
+    <planet-detail v-if="selectedPlanet && selectedActivity === 'planets'" :planet='selectedPlanet'/>
+    <fav-planets v-if="favPlanets.length > 0 && selectedActivity === 'planets'" :favPlanet='favPlanets'/>
+    <rovers-grid v-if="selectedActivity === 'rovers'"/>
   </div>
 </template>
 
@@ -11,34 +13,38 @@
 import PlanetsGrid from './components/PlanetsGrid';
 import PlanetDetail from './components/PlanetDetail';
 import PlanetFavourites from './components/PlanetFavourites';
-import { eventBus } from './main.js'
-
+import { eventBus } from './main.js';
+import RoversGrid from './components/RoversGrid';
+import ActivityGrid from './components/ActivityGrid';
 export default {
-  name: 'App',
+  name: 'app',
   components: {
     'planets-grid': PlanetsGrid,
     'planet-detail': PlanetDetail,
-    'fav-planets': PlanetFavourites   
+    'fav-planets': PlanetFavourites, 
+    'rovers-grid': RoversGrid,
+    'activity-grid': ActivityGrid
   },
 data(){
   return{
     nasaData: [],
     planets: [],
     selectedPlanet: null,
-    favPlanets: []    
+    favPlanets: [],
+    selectedActivity: null  
   };
 },
 mounted(){
-  // fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=hqxy8ha0DRZY5lspLbllJ2Az2ab61mahFiO847ae`)
-  // .then(apiData => apiData.json())
-  // .then(apiDataJson => this.nasaData = apiDataJson)
-
   eventBus.$on('planet-selected', (planet) => {
     this.selectedPlanet = planet
   })
 
   eventBus.$on('favourite-planets', (planet) => {
     this.favPlanets.push(planet)
+  })
+
+  eventBus.$on('selected-activity', (activity) => {
+    this.selectedActivity = activity
   })
 }
 
@@ -51,8 +57,9 @@ mounted(){
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #eeeeee;
   margin-top: 60px;
+  
 }
 
 li {

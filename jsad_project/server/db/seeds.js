@@ -5,7 +5,7 @@ db.planets.insertMany([
     {name: "Mercury", diameter: 4878, distance_from_sun: 57.9, number_of_moons: 0, day_length: 1408, weight: 0.38, icon: "mercury.png", day_ratio: 175.9},
     {name: "Venus", diameter: 12104, distance_from_sun: 108.2, number_of_moons: 0, day_length: 5832, weight: 0.91, icon: "venus.png", day_ratio: 116.8},
     {name: "Earth", diameter: 12756, distance_from_sun: 149.6, number_of_moons: 1, day_length: 24, weight: 1, icon: "earth.png", day_ratio: 1},
-    {name: "Luna (Earth's Moon)",  diameter: 3474, distance_from_sun: 150, number_of_moons: 0, day_length: 708, weight: 0.17, icon: "luna.png", day_ratio: 29.5},
+    {name: "Luna",  diameter: 3474, distance_from_sun: 150, number_of_moons: 0, day_length: 708, weight: 0.17, icon: "luna.png", day_ratio: 29.5},
     {name: "Mars", diameter: 6787, distance_from_sun: 227.9, number_of_moons: 2, day_length: 25, weight: 0.38, icon: "mars.png", day_ratio: 1.03 },
     {name: "Jupiter", diameter: 142796, distance_from_sun: 778.3, number_of_moons: 671, day_length: 10, weight: 2.34, icon: "jupiter.png", day_ratio: 0.41},
     {name: "Saturn", diameter: 120660, distance_from_sun: 1427.0, number_of_moons: 62, day_length: 11, weight: 1.06, icon: "saturn.png", day_ratio: 0.44},
