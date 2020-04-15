@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>Orbital</h1>
+    <h1><img src="./assets/orbital.png" alt=""></h1>
     <activity-grid/>
     <iss-tracker v-if="selectedActivity === 'iss-tracker'"/>
     <planets-grid v-if="selectedActivity === 'planets'" :planets='planets'/>
@@ -9,7 +9,7 @@
     <fav-planets v-if="favPlanets.length > 0 && selectedActivity === 'planets'" :favPlanet='favPlanets'/>
     <rovers-grid v-if="selectedActivity === 'rovers'"/>
     <space-peeps v-if="selectedActivity === 'space-peeps'"/>
-    <pic-of-the-day/>
+    <pic-of-the-day v-if="selectedActivity === 'pic-of-the-day'"/>
   </div>
 </template>
 
