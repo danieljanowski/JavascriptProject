@@ -1,12 +1,11 @@
 <template>
 
+<div class ="iss-container">
   <div class="iss-map" style="height:800px; width: 80%; align: center;">
     <div style="height: 200px; overflow: auto">
-        <h3>Current ISS position: {{issPosition.latitude}}, {{issPosition.longitude}}</h3>
-        <p>Current zoom: {{ currentZoom }}</p>
-      <button @click="showMap = !showMap">
-        Toggle map
-      </button>
+        <!-- <h3>Current ISS position</h3> -->
+        <h3>Current Latitude: {{issPosition.latitude}} and Longitude: {{issPosition.longitude}}</h3>
+        <!-- <p>Current zoom: {{ currentZoom }}</p> -->
     </div>
     <l-map
       v-if="showMap"
@@ -19,7 +18,6 @@
     >
       <l-tile-layer
         :url="url"
-        :attribution="attribution"
       />
 
       <l-marker :lat-lng="withTooltip">
@@ -30,6 +28,7 @@
       </l-marker>
     </l-map>
   </div>
+</div>
 </template>
 
 <script>
@@ -54,7 +53,7 @@ export default {
       url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
       withPopup: latLng(parseFloat(`${this.issPosition.latitude}`), parseFloat(`${this.issPosition.longitude}`)),
       currentZoom: 4,
-      center: latLng(parseFloat(`${this.issPosition.latitude}`), parseFloat(`${this.issPosition.longitude}`)),
+      currentCenter: latLng(parseFloat(`${this.issPosition.latitude}`), parseFloat(`${this.issPosition.longitude}`)),
       showParagraph: false,
       mapOptions: {
         zoomSnap: 0.5
@@ -74,7 +73,7 @@ export default {
     },
   },
   computed: {
-    currentCenter: function() {
+    center: function() {
         return latLng(parseFloat(`${this.issPosition.latitude}`), parseFloat(`${this.issPosition.longitude}`))
     },
 
@@ -87,10 +86,9 @@ export default {
 
 <style scoped>
   
-.iss-map {
-  justify-content: center;
-  align-items: center;
-  
+.iss-container {
+    display: flex;
+    justify-content: center;
   }
 
 </style>

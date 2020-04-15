@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <h1>NASA</h1>
+    <h1>Orbital</h1>
     <activity-grid/>
-    <iss-tracker></iss-tracker>
+    <iss-tracker v-if="selectedActivity === 'iss-tracker'"></iss-tracker>
     <planets-grid v-if="selectedActivity === 'planets'" :planets='planets'/>
     <planet-detail v-if="selectedPlanet && selectedActivity === 'planets'" :planet='selectedPlanet'/>
     <fav-planets v-if="favPlanets.length > 0 && selectedActivity === 'planets'" :favPlanet='favPlanets'/>

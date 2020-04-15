@@ -1,6 +1,6 @@
 <template lang="html">
     <div>
-        <h2>This is where the ISS lives</h2>
+        <h2>Follow the International Space Station's orbit around Earth</h2>
         <iss-map v-if="issData.iss_position" :issPosition='issData.iss_position' ></iss-map>
     </div>
 </template>
