@@ -33,7 +33,7 @@
             The first Russian modules included basic systems needed for the space station to function. 
             They also provided living areas for crew members. Modules called "nodes" connect parts of the station to each other.
             Stretching out to the sides of the space station are the solar arrays. These arrays collect energy from the sun to 
-            provide electrical power. The arrays are connected to the station with a long truss. 
+            eprovide electrical power. The arrays are connected to the station with a long truss. 
             On the truss are radiators that control the space station's temperature.
             Robotic arms are mounted outside the space station. The robot arms were used to help build the space station. 
             Those arms also can move astronauts around when they go on spacewalks outside. Other arms operate science experiments.

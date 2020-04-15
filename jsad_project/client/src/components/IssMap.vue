@@ -1,12 +1,9 @@
 <template>
 
 <div class ="iss-container">
-  <div class="iss-map" style="height:800px; width: 80%; align: center;">
-    <div style="height: 200px; overflow: auto">
-        <!-- <h3>Current ISS position</h3> -->
+  <div class="iss-map" style="height:700px; width: 80%; align: center;">
         <h3>Current Latitude: {{issPosition.latitude}} and Longitude: {{issPosition.longitude}}</h3>
-        <!-- <p>Current zoom: {{ currentZoom }}</p> -->
-    </div>
+
     <l-map
       v-if="showMap"
       :zoom="zoom"

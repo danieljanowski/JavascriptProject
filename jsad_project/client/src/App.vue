@@ -2,12 +2,13 @@
   <div id="app">
     <h1>Orbital</h1>
     <activity-grid/>
-    <iss-tracker v-if="selectedActivity === 'iss-tracker'"></iss-tracker>
+    <iss-tracker v-if="selectedActivity === 'iss-tracker'"/>
     <planets-grid v-if="selectedActivity === 'planets'" :planets='planets'/>
     <planet-detail v-if="selectedPlanet && selectedActivity === 'planets'" :planet='selectedPlanet'/>
     <planet-info v-if="selectedPlanet && selectedActivity === 'planets'" :selectedPlanet='selectedPlanet'/>
     <fav-planets v-if="favPlanets.length > 0 && selectedActivity === 'planets'" :favPlanet='favPlanets'/>
     <rovers-grid v-if="selectedActivity === 'rovers'"/>
+    <space-peeps/>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import PlanetFavourites from './components/PlanetFavourites';
 import RoversGrid from './components/RoversGrid';
 import ActivityGrid from './components/ActivityGrid';
 import PlanetInfo from './components/PlanetInfo';
+import SpacePeople from './components/SpacePeople'
 import { eventBus } from './main.js';
 import IssTracker from './components/IssTracker';
 
@@ -30,8 +32,8 @@ export default {
     'rovers-grid': RoversGrid,
     'activity-grid': ActivityGrid,
     'planet-info': PlanetInfo,
-    'iss-tracker': IssTracker
-
+    'iss-tracker': IssTracker,
+    'space-peeps': SpacePeople,
   },
 data(){
   return{
