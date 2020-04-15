@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Current Space Peeps!</h1>
+        <h1 class="peeps-intro">Current Space Peeps!</h1>
             <div class="p-cards-container">
             <div class="people-card" v-for="peep in peopleSpaceData.people">
                 <p> <a :href="prepareGoogleAddress(peep.name)" target="_blank">{{peep.name}}: {{peep.craft}} <br>Click for more information</a></p>
@@ -62,5 +62,10 @@ export default {
             margin: 2%;
             padding: 2%;
         }
+
+    .peeps-intro {
+          margin-top: 100px;
+          padding-top: 50px;
+    }
 
 </style>

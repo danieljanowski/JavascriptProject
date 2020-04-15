@@ -5,7 +5,7 @@
       <h2>Calculate your weight on {{ planet.name }}!</h2>
                 <img id="weight-icon" src="../assets/scaleIcon.png" alt="" width="120px">
                 <h3>{{parseFloat((calculateWeight).toFixed(2))}} Kg</h3>
-                <input v-model.number="weight" placeholder="Your weight in kilos" type="number"  required>                    
+                <input class="calculator-input" v-model.number="weight" placeholder="Your weight in kilos" type="number"  required>                    
     </div>
 
      <div id="detail-info">
@@ -24,7 +24,7 @@
        <h2>Calculate your age on {{ planet.name }}!</h2>
                 <img id="age-icon" src="../assets/ageIcon.png" alt="" width="120px">
                 <h3>{{parseFloat((calculateAge).toFixed(2))}} Years</h3>
-                <input v-model.number="age" placeholder="Your age on Earth" type="number"  required>            
+                <input class="calculator-input" v-model.number="age" placeholder="Your age on Earth" type="number"  required>            
                 
     </div>
     <!-- <planet-info :selectedPlanet='selectedPlanet'></planet-info> -->
@@ -76,6 +76,8 @@ export default {
                         flex-direction: row;
                         justify-content: space-evenly;
                         margin:2%;
+                        margin-bottom: 1px;
+                        padding-bottom: 1px;
                         } 
     h2{color: #2A73C1;}
     h3{color: #2A73C1;
@@ -127,6 +129,14 @@ export default {
   flex-direction: column;
   border-radius: 10%;
   color: #2A73C1;
+}
+
+.calculator-input{
+  width: 60%;
+  display: flex;
+  align-self: center;
+  font-size: 16px;
+  text-align: center;
 }
 
 .hide{

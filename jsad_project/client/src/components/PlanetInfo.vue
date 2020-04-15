@@ -223,6 +223,10 @@ export default {
      flex-wrap: wrap;
      
      height: 500px;
+     margin-top: 1px;
+     padding-top: 1px;
+     padding-left: 70px;
+     padding-right: 70px;
      }
 .planet-facts{
     padding: 2%;
@@ -249,5 +253,11 @@ export default {
     height: auto;
   float: right; 
   border-radius: 12px;
+}
+
+p {
+     text-align: justify;
+     margin-left: 40px;
+     margin-right: 40px;
 }
 </style>

@@ -1,5 +1,6 @@
 <template>
- <div>
+ <div class="rovers-intro">
+     <h1>Discover Mars Rovers!</h1>
         <p> NASA's Mars Exploration Rover (MER) mission was a robotic space mission launched in 2003 involving two Mars rovers, Spirit and Opportunity, exploring the planet Mars. The two rovers were then joined by Curiosity in 2012.
         The Mars Exploration Program's four principal goals were to determine if the potential for life exists on Mars
         (in particular, whether recoverable water may be found on Mars), 
@@ -19,8 +20,8 @@
                 <rover-info :chosenRover="chosenRover"></rover-info>
                 <div class="did-you-know-info">
                     <h3>Did you know that...</h3>
-                    <p>A sol is a solar day on Mars. Your chosen rover "{{ chosenRover }}" has been on Mars for {{handleMaxNumber(chosenRover)}} sols, which is {{ parseFloat(Math.round(handleMaxNumber(chosenRover) * 1.03).toFixed(0)) }} Earth days.</p>
-                   <h3>Choose a sol to display 20 random photos taken on that sol</h3>
+                    <h3>A sol is a solar day on Mars. Your chosen rover "{{ chosenRover }}" has been on Mars for {{handleMaxNumber(chosenRover)}} sols, which is {{ parseFloat(Math.round(handleMaxNumber(chosenRover) * 1.03).toFixed(0)) }} Earth days.</h3>
+                    <h3>Enter a sol number below to display 20 random photos taken on that day on Mars</h3>
                 
 
                 <form v-on:submit.prevent="handleChosenSol">
@@ -117,14 +118,18 @@ computed: {
 
 <style scoped>
 
+.rovers-intro {
+    margin-top: 100px;
+    padding-top: 50px;
+}
+
 #rover-photo-container{
     padding: 1%;
 }
 .roversgrid{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    
+    justify-content: center;  
 }
 
 .single-rover{
@@ -137,7 +142,7 @@ computed: {
 .single-rover-photo-container{
     display: flex;
     flex-direction: column;
-    width: 450px;
+    /* width: 450px; */
     padding-right: 10px;
     padding-left: 10px;
     padding-top: 15px;
@@ -169,10 +174,6 @@ computed: {
   position: relative;
   border-radius: 12px;
   bottom: 25px
-}
-
-h1 {
-    font-style: oblique;
 }
 
 .rover-profile-image{
@@ -214,8 +215,21 @@ button:hover {
 }
 
 input {
-    height: 30px;
-    width: 60px;
+  font-size: 16px;
+  text-align: center; 
+  padding: 12px;
+  margin-right: 16px;
+}
+
+h1 {
+    font-style: oblique;
+}
+
+p {
+     text-align: justify;
+     margin-top: 80px;
+     margin-left: 110px;
+     margin-right: 110px;
 }
 
 </style>

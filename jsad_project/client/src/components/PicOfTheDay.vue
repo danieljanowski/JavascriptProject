@@ -1,11 +1,10 @@
 <template>
     <div class="pic-container">
-        <h1>Astronomy Photo Of The Day</h1>
+        <h1 class="pic-intro">Astronomy Photo Of The Day</h1>
         <div v-bind="picOfTheDay">
-            <h2>{{ picOfTheDay.title }}</h2>
+            <h2>{{ picOfTheDay.date }}: {{ picOfTheDay.title }}</h2>
             <img class="astronomy-picture" :src="picOfTheDay.url" alt="Pic of the day">
-            <p>{{ picOfTheDay.date }}</p>
-            <p>{{ picOfTheDay.explanation}}</p>
+            <p class="pic-explanation">{{ picOfTheDay.explanation}}</p>
         </div>
     </div>
 </template>
@@ -35,6 +34,27 @@ export default {
 .pic-container{
     display: flex;
     flex-direction: column;
+    margin-top: 100px;
+    padding-top: 50px;
+}
+.pic-explanation{
+       padding: 2%;
+      margin:2%;
+  background-color: silver;
+  margin: 2%;
+  text-align: center;
+    width: 93%;
+  color: #2A73C1;
+  float:left;
+  position: relative;
+  border-radius: 12px;
+}
+
+p {
+     text-align: justify;
+     margin-top: 80px;
+     margin-left: 140px;
+     margin-right: 140px;
 }
 
 </style>

@@ -45,7 +45,7 @@ export default {
   },
   data() {
     return {
-      zoom: 4,
+      zoom: 5,
       url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
       withPopup: latLng(parseFloat(`${this.issPosition.latitude}`), parseFloat(`${this.issPosition.longitude}`)),
       currentZoom: 4,

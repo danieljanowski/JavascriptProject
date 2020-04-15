@@ -1,15 +1,23 @@
 <template lang="html">
 
-
-    <div>
-        <h2>Follow the International Space Station's orbit around Earth</h2>
+    <div class="iss-intro">
+        <h1>Follow the International Space Station's orbit around Earth</h1>
         <iss-map v-if="issData.iss_position" :issPosition='issData.iss_position' ></iss-map>
-        <img id="iss-image" src="http://spacecraftearth.com/wp-content/uploads/2017/06/ISS-Earth-Mediterranean-2.jpg" width="800px" alt="">
         <div id="iss-main-container">
-        <h1>5 Things to know about the International Space Station</h1>
+            <img id="iss-image" src="http://spacecraftearth.com/wp-content/uploads/2017/06/ISS-Earth-Mediterranean-2.jpg" width="800px" alt="">
+        <div class="iss-info-vocab">
+        <h2>Words to Know</h2>
+            <p>module: a self-contained unit of a spacecraft</p>
+            <p>truss: a beam that serves as the space station's backbone to which some parts are connected</p>
+            <p>airlock: an airtight room with two entrances that allows an astronaut to go on a spacewalk without letting the air out of the spacecraft</p>
+            <p>microgravity: the condition of being weightless, or of the near absence of gravity</p>
+        </div>
+        
     <div class="iss-info">
+        <h1>5 Things to know about the International Space Station</h1>
         <details>
         <summary>What is the International Space Station?</summary>
+        
             <p>The International Space Station is a large spacecraft in orbit around Earth. It serves as a home where crews of 
             astronauts and cosmonauts live. The space station is also a unique science laboratory. 
             Several nations worked together to build and use the space station. 
@@ -61,13 +69,7 @@
         </details>
     </div>
 
-    <div class="iss-info-vocab">
-        <h2>Words to Know</h2>
-            <p>module: a self-contained unit of a spacecraft</p>
-            <p>truss: a beam that serves as the space station's backbone to which some parts are connected</p>
-            <p>airlock: an airtight room with two entrances that allows an astronaut to go on a spacewalk without letting the air out of the spacecraft</p>
-            <p>microgravity: the condition of being weightless, or of the near absence of gravity</p>
-    </div>
+    
     </div>
     </div>
     
@@ -103,22 +105,64 @@ export default {
 </script>
 
 <style scoped>
-.summary{
+summary{
     font-size: 1.5em;
 }
-.iss-main-container{
 
+.iss-main-container{
+        height: auto;
 }
 
 .iss-info-vocab{
+    padding: 2%;
+  background-color: silver;
+  margin: 2%;
+  text-align: center;
+    width: 30%;
+  color: #2A73C1;
+  position: relative;
+  float: left;
+  border-radius: 12px;
 
 }
 
 .iss-info{
-
+      padding: 2%;
+      margin:2%;
+  background-color: silver;
+  margin: 2%;
+  text-align: center;
+    width: 93%;
+  color: #2A73C1;
+  float:left;
+  position: relative;
+  border-radius: 12px;
 }
 
 #iss-image{
+    border-radius: 12px;
+    position: relative;
+    margin: 1%;
+    float: right;
+    width: 60%;
+    height: 447px;
+    
+    top: 15px;
+}
 
+.iss-intro {
+    margin-top: 100px;
+    padding-top: 50px;
+}
+
+
+h1 {
+    font-style: oblique;
+}
+
+p {
+     text-align: justify;
+     margin-left: 40px;
+     margin-right: 40px;
 }
 </style>

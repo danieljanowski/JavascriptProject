@@ -19,7 +19,7 @@
                 In addition, a US penny is on-board NASA's Curiosity rover that is scheduled to land on Mars in August.
                 The 1909 penny commemorating the centennial of President Lincoln's birth will act as a calibration target to help scientists and the public to gauge the size of objects on Mars.
                 </p>
-                <details>
+                <details class="cameras">
                     <summary> Rover Cameras </summary>
             <img src="../assets/curiosity-cameras.jpg" alt="" width="500px">
             </details>
@@ -47,7 +47,7 @@
                     Spirit overcame numerous technical difficulties (including a faulty wheel) and delivered scientific data back to Earth for six years.
                     It stopped communicating with Earth on March 22, 2010, after it got stuck in a sand trap. 
                 </p>
-                <details>
+                <details class="cameras">
                     <summary> Rover Cameras </summary>
             <img src="../assets/roversCameras.jpeg" alt="" width="500px">
                 </details>
@@ -77,8 +77,8 @@
                     The car-sized Mars rover ceased all communications with Earth in June 2018, when a planet-wide storm engulfed Mars. NASA revealed Opportunity’s last communique with Earth: as the Martian
                     storm descended on the rover and the skies were choked of all sunlight the solar-powered, Opportunity messaged NASA saying: "My battery is low and it’s getting dark.”
                 </p>
-                    <details>
-                        <summary> Rover Cameras </summary>
+                    <details class="cameras">
+                        <summary> Rover Camer as </summary>
                     <img src="../assets/roversCameras.jpeg" alt="" width="500px">
             </details>
             </div>
@@ -108,8 +108,8 @@ export default {
      flex-wrap: wrap;
      
      height: 500px;
-
 }
+
 .mission-info {
   padding: 2%;
   background-color: silver;
@@ -142,8 +142,15 @@ export default {
     top : 50%;
   padding: 2%;
   margin: 2%;
-  
   color: #2A73C1;
   text-align: left;
+  z-index: -1;
+  position: relative;
 }
+
+.cameras {
+    z-index: 10;
+    position: relative;
+}
+
 </style>

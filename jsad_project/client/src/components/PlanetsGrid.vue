@@ -2,7 +2,7 @@
 	<div id="planetsGrid">
 		<h1>Pick a planet!</h1>
        <ul>
-      <grid-item v-for="(planet, index) in planets" :planet="planet" :key="index"></grid-item>
+      <grid-item v-for="(planet, index) in planets" :planet="planet" :key="index" v-scroll-to="'.detail-container'"></grid-item>
     </ul>
 	</div>
 </template>
@@ -36,6 +36,11 @@ export default {
 
 
 <style scoped>
+
+#planetsGrid {
+  margin-top: 100px;
+}  
+
 ul{
   display: flex;
 }
