@@ -41,6 +41,10 @@ export default {
   margin-top: 100px;
 }  
 
+h1 {
+  font-style: oblique;
+}
+
 ul{
   display: flex;
 }

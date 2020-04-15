@@ -123,6 +123,7 @@ export default {
   bottom: 50%;
   height: 350px;
   border-radius: 12px;
+  text-align: justify;
 
 }
 
@@ -131,15 +132,15 @@ export default {
   background-color: silver;
   margin: 2%;
   text-align: center;
-    width: 25%;
+  width: 25%;
   color: #2A73C1;
   float: left;
   border-radius: 12px;
 }
 
 .did-you-know-info{
-    position: relative;
-    top : 50%;
+  position: relative;
+  top : 50%;
   padding: 2%;
   margin: 2%;
   color: #2A73C1;
@@ -149,8 +150,9 @@ export default {
 }
 
 .cameras {
-    z-index: 10;
-    position: relative;
+  z-index: 10;
+  position: relative;
+  background:rgba(3, 3, 3, 0.904);
 }
 
 </style>

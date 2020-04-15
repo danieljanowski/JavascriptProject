@@ -14,6 +14,7 @@
         <p>Distance from Sun in million of km: {{ planet.distance_from_sun }}</p>
         <p>Number of moons: {{ planet.number_of_moons }}</p>
         <p>Day length in Earth hours: {{ planet.day_length }}</p>
+        <p>Year length: {{parseFloat(planet.day_ratio*365).toFixed(2)}} Earth days</p>
         <p>Weight ratio to 1 kg: {{ planet.weight }}</p>
         
     <button v-on:click="handleFavouriteClick" v-scroll-to="'.fav-container'">Add To Favourites</button>
@@ -59,7 +60,7 @@ export default {
       },
 
       calculateAge: function() {
-        return this.age * this.planet.day_ratio
+        return this.age / this.planet.day_ratio
      },
    }
 }
@@ -108,6 +109,7 @@ export default {
 
 #weight-calculator{
   padding: 2%;
+  margin: 0.5%;
   background-color: silver;
   display: flex;
   flex-direction: column;
@@ -116,6 +118,7 @@ export default {
 }
 #age-calculator{
   padding: 2%;
+  margin: 0.5%;
   background-color: silver;
   display: flex;
   flex-direction: column;
@@ -124,6 +127,7 @@ export default {
 }
 #detail-info{
   padding: 2%;
+  margin: 0.5%;
   background-color: silver;
   display: flex;
   flex-direction: column;

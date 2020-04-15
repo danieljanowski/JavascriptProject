@@ -227,7 +227,7 @@ h1 {
 
 p {
      text-align: justify;
-     margin-top: 80px;
+     margin-top: 50px;
      margin-left: 110px;
      margin-right: 110px;
 }

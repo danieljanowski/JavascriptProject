@@ -38,23 +38,25 @@ export default {
     padding-top: 50px;
 }
 .pic-explanation{
-       padding: 2%;
-      margin:2%;
+  padding: 2%;
+  margin:2%;
   background-color: silver;
   margin: 2%;
   text-align: center;
-    width: 93%;
+  width: 93%;
   color: #2A73C1;
   float:left;
   position: relative;
   border-radius: 12px;
 }
 
-p {
+h1 {
+    font-style: oblique;
+}
+
+.pic-explanation {
      text-align: justify;
      margin-top: 80px;
-     margin-left: 140px;
-     margin-right: 140px;
 }
 
 </style>

@@ -7,10 +7,10 @@
             <img id="iss-image" src="http://spacecraftearth.com/wp-content/uploads/2017/06/ISS-Earth-Mediterranean-2.jpg" width="800px" alt="">
         <div class="iss-info-vocab">
         <h2>Words to Know</h2>
-            <p>module: a self-contained unit of a spacecraft</p>
-            <p>truss: a beam that serves as the space station's backbone to which some parts are connected</p>
-            <p>airlock: an airtight room with two entrances that allows an astronaut to go on a spacewalk without letting the air out of the spacecraft</p>
-            <p>microgravity: the condition of being weightless, or of the near absence of gravity</p>
+            <p><b>module:</b> a self-contained unit of a spacecraft</p>
+            <p><b>truss:</b> a beam that serves as the space station's backbone to which some parts are connected</p>
+            <p><b>airlock:</b> an airtight room with two entrances that allows an astronaut to go on a spacewalk without letting the air out of the spacecraft</p>
+            <p><b>microgravity:</b> the condition of being weightless, or of the near absence of gravity</p>
         </div>
         
     <div class="iss-info">
