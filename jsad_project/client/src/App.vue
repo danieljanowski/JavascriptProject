@@ -74,11 +74,14 @@ mounted(){
   text-align: center;
   color: #eeeeee;
   margin-top: 60px;
-  
 }
 
 li {
   list-style-type: none;
+}
+
+p {
+  font-size: 1.25em;
 }
 </style>
     

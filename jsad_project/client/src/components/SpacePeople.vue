@@ -1,8 +1,10 @@
 <template>
     <div>
         <h1>Current Space Peeps!</h1>
-        <div v-for="peep in peopleSpaceData.people">
-            <p> <a :href="prepareGoogleAddress(peep.name)" target="_blank">{{peep.name}}: {{peep.craft}} <br>Click for more information</a></p>
+            <div class="p-cards-container">
+            <div class="people-card" v-for="peep in peopleSpaceData.people">
+                <p> <a :href="prepareGoogleAddress(peep.name)" target="_blank">{{peep.name}}: {{peep.craft}} <br>Click for more information</a></p>
+            </div>
         </div>
     </div>
 </template>
@@ -24,7 +26,6 @@ export default {
             .then(apiData => apiData.json())
             .then(apiDataJson => this.peopleSpaceData = apiDataJson)
             },
-
         prepareGoogleAddress(peepName){
             return `http://www.google.com/search?q=${peepName}&btnI`
         }
@@ -36,10 +37,23 @@ export default {
     p {
         font-size: 1.5em;
     }
-
+    
     a {
         text-decoration: none;
-    color:white;
+        color:white;
     }
-</style>
 
+    .p-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+
+    .people-card {
+            /* flex: 0 1 calc(40% - 1em); */
+            background-color: grey;
+            margin: 2%;
+            padding: 2%;
+        }
+
+</style>

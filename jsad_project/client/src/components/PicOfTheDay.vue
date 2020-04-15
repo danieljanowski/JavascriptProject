@@ -2,10 +2,10 @@
     <div>
         <h1>Astronomy Photo Of The Day</h1>
         <div v-bind="picOfTheDay">
-            {{ picOfTheDay.title }} <br>
+            {{ picOfTheDay.title }}
             <img class="center_img" :src="picOfTheDay.url" alt="Pic of the day">
-            {{ picOfTheDay.date }}<br>
-            {{ picOfTheDay.explanation}}<br>
+            {{ picOfTheDay.date }}
+            {{ picOfTheDay.explanation}}
         </div>
     </div>
 </template>
