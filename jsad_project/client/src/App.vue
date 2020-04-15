@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <h1>NASA</h1>
+    <h1>Orbital</h1>
     <activity-grid/>
+    <iss-tracker v-if="selectedActivity === 'iss-tracker'"></iss-tracker>
     <planets-grid v-if="selectedActivity === 'planets'" :planets='planets'/>
     <planet-detail v-if="selectedPlanet && selectedActivity === 'planets'" :planet='selectedPlanet'/>
     <planet-info v-if="selectedPlanet && selectedActivity === 'planets'" :selectedPlanet='selectedPlanet'/>
@@ -17,8 +18,9 @@ import PlanetFavourites from './components/PlanetFavourites';
 import RoversGrid from './components/RoversGrid';
 import ActivityGrid from './components/ActivityGrid';
 import PlanetInfo from './components/PlanetInfo';
-
 import { eventBus } from './main.js';
+import IssTracker from './components/IssTracker';
+
 export default {
   name: 'app',
   components: {
@@ -27,7 +29,9 @@ export default {
     'fav-planets': PlanetFavourites, 
     'rovers-grid': RoversGrid,
     'activity-grid': ActivityGrid,
-    'planet-info': PlanetInfo
+    'planet-info': PlanetInfo,
+    'iss-tracker': IssTracker
+
   },
 data(){
   return{

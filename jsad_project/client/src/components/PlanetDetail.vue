@@ -16,7 +16,7 @@
         <p>Day length in Earth hours: {{ planet.day_length }}</p>
         <p>Weight ratio to 1 kg: {{ planet.weight }}</p>
         
-    <button v-on:click="handleFavouriteClick">Add To Favourites</button>
+    <button v-on:click="handleFavouriteClick" v-scroll-to="'.fav-container'">Add To Favourites</button>
     </div>
 
    
@@ -76,7 +76,7 @@ export default {
                         flex-direction: row;
                         justify-content: space-evenly;
                         margin:2%;
-                        }
+                        } 
     h2{color: #2A73C1;}
     h3{color: #2A73C1;
     font-size: 1.5em;}
