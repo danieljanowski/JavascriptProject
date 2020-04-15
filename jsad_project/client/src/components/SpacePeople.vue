@@ -2,7 +2,7 @@
     <div>
         <h1>Current Space Peeps!</h1>
         <div v-for="peep in peopleSpaceData.people">
-            <p> {{peep.name}}: {{peep.craft}} <br><a :href="prepareGoogleAddress(peep.name)" target="_blank">Click for more information</a></p>
+            <p> <a :href="prepareGoogleAddress(peep.name)" target="_blank">{{peep.name}}: {{peep.craft}} <br>Click for more information</a></p>
         </div>
     </div>
 </template>

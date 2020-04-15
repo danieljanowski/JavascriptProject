@@ -3,6 +3,7 @@
         <span><div class="activity-icon-single"><img id="rover-button" @click="handleSelectRovers" src="../assets/roverSelect.png" height="140px"></div></span>
         <span><div class="activity-icon-single"><img id="planets-button" @click="handleSelectPlanets" src="../assets/planetSelect.png" height="140px" ></div></span>
         <span><div class="activity-icon-single"><img id="iss-button" @click="handleSelectISS" src="../assets/issSelect.png" height="140px" ></div></span>
+        <span><div class="activity-icon-single"><img id="spacePeeps-button" @click="handleSelectSpacePeeps" src="../assets/spacePeepsSelect.png" height="140px" ></div></span>
     </div>
 </template>
 
@@ -29,6 +30,10 @@ export default {
         handleSelectISS(){
             this.selectedActivity = "iss-tracker";
             eventBus.$emit('selected-activity', this.selectedActivity);
+        },
+        handleSelectSpacePeeps(){
+            this.selectedActivity = "space-peeps";
+            eventBus.$emit('selected-activity', this.selectedActivity);
         }
     },
 }
@@ -44,6 +49,10 @@ export default {
 
                 padding: 2%;}
 #iss-button{border-radius: 50%;
+                background-color: orange;
+                padding: 2%;}
+
+#spacePeeps-button{border-radius: 50%;
                 background-color: orange;
                 padding: 2%;}
 
@@ -63,7 +72,7 @@ export default {
                 border-color: black;
                 border-style: solid;
                 }
-#iss-button:hover{border-radius: 50%;
+#spacePeeps-button:hover{border-radius: 50%;
                 background-color: orange;
                 padding: 2%;
                 border: 6px;
