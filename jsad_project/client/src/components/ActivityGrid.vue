@@ -1,10 +1,10 @@
 <template lang="html">
     <div class="activity-icons">
-        <span><div class="activity-icon-single"><img id="rover-button" @click="handleSelectRovers" src="../assets/roverSelect.png" height="140px"></div></span>
-        <span><div class="activity-icon-single"><img id="planets-button" @click="handleSelectPlanets" src="../assets/planetSelect.png" height="140px" ></div></span>
-        <span><div class="activity-icon-single"><img id="iss-button" @click="handleSelectISS" src="../assets/issSelect.png" height="140px" ></div></span>
-        <span><div class="activity-icon-single"><img id="spacePeeps-button" @click="handleSelectSpacePeeps" src="../assets/spacePeepsSelect.png" height="140px" ></div></span>
-        <span><div class="activity-icon-single"><img id="pod-button" @click="handleSelectPicOfTheDay" src="../assets/podSelect.png" height="140px" ></div></span>
+        <span><div title="Rovers" class="activity-icon-single"><img id="rover-button" @click="handleSelectRovers" src="../assets/roverSelect.png" height="140px"></div></span>
+        <span><div title="Planets" class="activity-icon-single"><img id="planets-button" @click="handleSelectPlanets" src="../assets/planetSelect.png" height="140px" ></div></span>
+        <span><div title="ISS" class="activity-icon-single"><img id="iss-button" @click="handleSelectISS" src="../assets/issSelect.png" height="140px" ></div></span>
+        <span><div title="Peeps in space" class="activity-icon-single"><img id="spacePeeps-button" @click="handleSelectSpacePeeps" src="../assets/spacePeepsSelect.png" height="140px" ></div></span>
+        <span><div title="Pic of the day" class="activity-icon-single"><img id="pod-button" @click="handleSelectPicOfTheDay" src="../assets/podSelect.png" height="140px" ></div></span>
     </div>
 </template>
 

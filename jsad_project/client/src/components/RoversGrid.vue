@@ -1,32 +1,34 @@
 <template>
-    <div>
-         <p>NASA's Mars Exploration Rover (MER) mission was a robotic space mission launched in 2003 involving two Mars rovers, Spirit and Opportunity, exploring the planet Mars. The two rovers were then joined by Curiosity in 2012. <br>
-             The Mars Exploration Program's four principal goals were to determine if the potential for life exists on Mars
-            (in particular, whether recoverable water may be found on Mars), 
-            to characterize the Mars climate and its geology, and then to prepare for a potential human mission to Mars.
-             The Mars Exploration Rovers were to travel across the Martian surface and perform periodic geologic analyses to determine if water ever existed
-              on Mars as well as the types of minerals available, as well as to corroborate data taken by the Mars Reconnaissance Orbiter.
-         </p>
+ <div>
+        <p> NASA's Mars Exploration Rover (MER) mission was a robotic space mission launched in 2003 involving two Mars rovers, Spirit and Opportunity, exploring the planet Mars. The two rovers were then joined by Curiosity in 2012.
+        The Mars Exploration Program's four principal goals were to determine if the potential for life exists on Mars
+        (in particular, whether recoverable water may be found on Mars), 
+        to characterize the Mars climate and its geology, and then to prepare for a potential human mission to Mars.
+        The Mars Exploration Rovers were to travel across the Martian surface and perform periodic geologic analyses to determine if water ever existed
+        on Mars as well as the types of minerals available, as well as to corroborate data taken by the Mars Reconnaissance Orbiter.</p>
+    
        <h1>Choose the rover</h1>
         <div class="roversgrid">
             <span class="single-rover" v-scroll-to="'#element'"><img class="rover-profile-image" @click="handleOpportunitySelected" src="../assets/opportunity.jpg" alt="">Opportunity</span>
             <span class="single-rover" v-scroll-to="'#element'"><img class="rover-profile-image" @click="handleCuriositySelected" src="../assets/curiosity.jpg" width=250px alt="">Curiosity</span>
             <span class="single-rover" v-scroll-to="'#element'"><img class="rover-profile-image" @click="handleSpiritSelected" src="../assets/spirit.jpg" width=250px alt="">Spirit</span>
-       
         </div>
-        <div v-if="chosenRover">
-                <h1 id="element" v-scroll-to="'.single-rover'">{{ chosenRover }}</h1>
+    <div id="rover-photo-container">
+        <div id="info-container" v-if="chosenRover">
+            <h1 id="element" v-scroll-to="'.single-rover'">{{ chosenRover }}</h1>
                 <rover-info :chosenRover="chosenRover"></rover-info>
                 <div class="did-you-know-info">
-                    <p>A sol is a solar day on Mars. <br> Your chosen rover "{{ chosenRover }}" has been on Mars for {{handleMaxNumber(chosenRover)}} sols, which is {{ parseFloat(Math.round(handleMaxNumber(chosenRover) * 1.03).toFixed(0)) }} Earth days.</p>
+                    <h3>Did you know that...</h3>
+                    <p>A sol is a solar day on Mars. Your chosen rover "{{ chosenRover }}" has been on Mars for {{handleMaxNumber(chosenRover)}} sols, which is {{ parseFloat(Math.round(handleMaxNumber(chosenRover) * 1.03).toFixed(0)) }} Earth days.</p>
                    <h3>Choose a sol to display 20 random photos taken on that sol</h3>
-                </div>
-            <form v-on:submit.prevent="handleChosenSol">
-                <input v-model="chosenSol" placeholder="1000" type="number" min="0" :max="handleMaxNumber(chosenRover)"  required>            
-                <button type="submit">Show Photos</button>
-                <button type="submit" v-if="nasaData.photos">Shuffle Photos</button>
-            </form>
-            <br>
+                
+
+                <form v-on:submit.prevent="handleChosenSol">
+                    <input id="inputSol" v-model="chosenSol" placeholder="1000" type="number" min="0" :max="handleMaxNumber(chosenRover)"  required>            
+                     <button type="submit">Show Photos</button>
+                     <button type="submit" v-if="nasaData.photos">Shuffle Photos</button>
+                </form>
+            </div>
         </div>
         <div class="photo-grid" v-if="nasaData.photos">
                 <span v-for="photo in randomPhotos">
@@ -42,8 +44,8 @@
                  <button type="submit" v-scroll-to="'#element'" v-if="nasaData.photos">Back to top</button>
             </form>
         </div>
-
     </div>
+</div>
 </template>
 
 <script>
@@ -114,10 +116,15 @@ computed: {
 </script>
 
 <style scoped>
+
+#rover-photo-container{
+    padding: 1%;
+}
 .roversgrid{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
 }
 
 .single-rover{
@@ -137,20 +144,31 @@ computed: {
     padding-bottom: 15px;   
 }
 
-
 .photo-grid{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: silver;
+    border-radius: 12px;
+    margin: 2%;
 }
+
+/* #info-container1{display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 2%;
+                } */
 
 .did-you-know-info{
   padding: 2%;
+  margin: 2%;
   background-color: silver;
   display: flex;
   flex-direction: column;
-  /* border-radius: 10%; */
   color: #2A73C1;
+  position: relative;
+  border-radius: 12px;
+  bottom: 25px
 }
 
 h1 {
@@ -193,6 +211,11 @@ button:hover {
   background-color: white; 
   border: none;
   color: red;
+}
+
+input {
+    height: 30px;
+    width: 60px;
 }
 
 </style>

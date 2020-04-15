@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="info-container" v-if="chosenRover === 'Curiosity'">
+    <div id="main-info-container">
+        <div v-if="chosenRover === 'Curiosity'">
             <!-- Curiosity Info -->
             <div class="key-facts">
                 <h3>{{ chosenRover }}'s key facts</h3>
@@ -19,14 +19,17 @@
                 In addition, a US penny is on-board NASA's Curiosity rover that is scheduled to land on Mars in August.
                 The 1909 penny commemorating the centennial of President Lincoln's birth will act as a calibration target to help scientists and the public to gauge the size of objects on Mars.
                 </p>
+                <details>
+                    <summary> Rover Cameras </summary>
+            <img src="../assets/curiosity-cameras.jpg" alt="" width="500px">
+            </details>
             </div>
-            <span><img src="../assets/curiosity-cameras.jpg" alt="" width="500px"></span>
              <div class="did-you-know-info">
                 <h3>Did you know that...</h3>
              </div>
         </div>
 
-        <div class="info-container" v-if="chosenRover === 'Spirit'">
+        <div  v-if="chosenRover === 'Spirit'">
             <!-- Spirit Info -->
              <div class="key-facts">
                 <h3>{{ chosenRover }}'s key facts</h3>
@@ -44,14 +47,18 @@
                     Spirit overcame numerous technical difficulties (including a faulty wheel) and delivered scientific data back to Earth for six years.
                     It stopped communicating with Earth on March 22, 2010, after it got stuck in a sand trap. 
                 </p>
+                <details>
+                    <summary> Rover Cameras </summary>
+            <img src="../assets/roversCameras.jpeg" alt="" width="500px">
+                </details>
                 </div>
-            <span><img src="../assets/roversCameras.jpeg" alt="" width="500px"></span>
+                
              <div class="did-you-know-info">
                 <h3>Did you know that...</h3>
              </div>
         </div>
 
-        <div class="info-container" v-if="chosenRover === 'Opportunity'">
+        <div  v-if="chosenRover === 'Opportunity'">
             <!-- Opportunity Info -->
              <div class="key-facts">
                 <h3>{{ chosenRover }}'s key facts</h3>
@@ -70,10 +77,10 @@
                     The car-sized Mars rover ceased all communications with Earth in June 2018, when a planet-wide storm engulfed Mars. NASA revealed Opportunity’s last communique with Earth: as the Martian
                     storm descended on the rover and the skies were choked of all sunlight the solar-powered, Opportunity messaged NASA saying: "My battery is low and it’s getting dark.”
                 </p>
-            </div>
-            <span><img src="../assets/roversCameras.jpeg" alt="" width="500px"></span>
-            <div class="did-you-know-info">
-                 <h3>Did you know that...</h3>
+                    <details>
+                        <summary> Rover Cameras </summary>
+                    <img src="../assets/roversCameras.jpeg" alt="" width="500px">
+            </details>
             </div>
         </div>
     </div>
@@ -90,37 +97,53 @@ export default {
 
 <style scoped>
 
- .info-container{ 
-    display: flex;
-    flex-wrap: wrap;
-}
+ /* .info-container{ 
+    order: 1;
 
+} */
+#main-info-container{
+    display: flex;
+     flex-flow: flex-direction;
+     align-content: flex-start;
+     flex-wrap: wrap;
+     
+     height: 500px;
+
+}
 .mission-info {
   padding: 2%;
   background-color: silver;
-  display: flex;
-  flex-direction: column;
-  /* border-radius: 10%; */
+  position: relative;
   color: #2A73C1;
-  width: 200px;
-  height: 400px;
+  margin: 2%;
+  text-align: center;
+  width: 60%;
+  order: 2;
+  float: right;
+  bottom: 50%;
+  height: 350px;
+  border-radius: 12px;
+
 }
 
 .key-facts{
   padding: 2%;
   background-color: silver;
-  display: flex;
-  flex-direction: column;
-  /* border-radius: 10%; */
+  margin: 2%;
+  text-align: center;
+    width: 25%;
   color: #2A73C1;
+  float: left;
+  border-radius: 12px;
 }
 
 .did-you-know-info{
+    position: relative;
+    top : 50%;
   padding: 2%;
-  background-color: silver;
-  display: flex;
-  flex-direction: column;
-  /* border-radius: 10%; */
+  margin: 2%;
+  
   color: #2A73C1;
+  text-align: left;
 }
 </style>

@@ -4,9 +4,12 @@
     <div>
         <h2>Follow the International Space Station's orbit around Earth</h2>
         <iss-map v-if="issData.iss_position" :issPosition='issData.iss_position' ></iss-map>
+        <img id="iss-image" src="http://spacecraftearth.com/wp-content/uploads/2017/06/ISS-Earth-Mediterranean-2.jpg" width="800px" alt="">
+        <div id="iss-main-container">
         <h1>5 Things to know about the International Space Station</h1>
     <div class="iss-info">
-        <h2>What is the International Space Station?</h2>
+        <details>
+        <summary>What is the International Space Station?</summary>
             <p>The International Space Station is a large spacecraft in orbit around Earth. It serves as a home where crews of 
             astronauts and cosmonauts live. The space station is also a unique science laboratory. 
             Several nations worked together to build and use the space station. 
@@ -14,21 +17,25 @@
             It orbits Earth at an average altitude of approximately 250 miles. It travels at 17,500 mph. 
             This means it orbits Earth every 90 minutes. NASA is using the space station to learn more about living 
             and working in space. These lessons will make it possible to send humans farther into space than ever before.</p>
-
-        <h2>How old is the Space Station?</h2>
+            </details>
+        <details>
+        <summary>How old is the Space Station?</summary>
             <p>The first piece of the International Space Station was launched in November 1998. 
             More pieces were added over the next two years before the station was ready for people to live there. 
             The first crew arrived on November 2, 2000. People have lived on the space station ever since. 
             More pieces have been added over time. NASA and its partners from around the world completed construction 
             of the space station in 2011.</p>
-
-        <h2>How big is the Space Station?</h2>
+         </details>
+        <details>
+         <summary>How big is the Space Station?</summary>
             <p>The space station has the volume of a five-bedroom house or two Boeing 747 jetliners. 
             It is able to support a crew of six people, plus visitors. On Earth, the space station would weigh almost a million pounds. 
             Measured from the edges of its solar arrays, the station covers the area of a football field including the end zones. 
             It includes laboratory modules from the United States, Russia, Japan and Europe.</p>
-
-        <h2>What are the parts of the Space Station?</h2>
+            </details>
+        <details>
+        <summary>What are the parts of the Space Station?</summary>
+        
             <p>In addition to the laboratories where astronauts conduct science research, the space station has many other parts. 
             The first Russian modules included basic systems needed for the space station to function. 
             They also provided living areas for crew members. Modules called "nodes" connect parts of the station to each other.
@@ -40,8 +47,10 @@
             Astronauts can go on spacewalks through airlocks that open to the outside. 
             Docking ports allow other spacecraft to connect to the space station. New crews and visitors arrive through the ports. 
             Astronauts fly to the space station on the Russian Soyuz. Robotic spacecraft use the docking ports to deliver supplies.</p>
-
-        <h2>Why is the Space Station important?</h2>
+       </details>
+        <details>
+        <summary>Why is the Space Station important?</summary>
+        
             <p>The space station has made it possible for people to have an ongoing presence in space. 
             Human beings have been living in space every day since the first crew arrived. 
             The space station's laboratories allow crew members to do research that could not be done anywhere else. 
@@ -49,6 +58,7 @@
             The results are products called "spinoffs." Scientists also study what happens to the body when people live in microgravity 
             for a long time.<br><br>
             NASA currently is working on a plan to explore other worlds. The space station is one of the first steps.</p>
+        </details>
     </div>
 
     <div class="iss-info-vocab">
@@ -57,6 +67,7 @@
             <p>truss: a beam that serves as the space station's backbone to which some parts are connected</p>
             <p>airlock: an airtight room with two entrances that allows an astronaut to go on a spacewalk without letting the air out of the spacecraft</p>
             <p>microgravity: the condition of being weightless, or of the near absence of gravity</p>
+    </div>
     </div>
     </div>
     
@@ -92,5 +103,22 @@ export default {
 </script>
 
 <style scoped>
+.summary{
+    font-size: 1.5em;
+}
+.iss-main-container{
 
+}
+
+.iss-info-vocab{
+
+}
+
+.iss-info{
+
+}
+
+#iss-image{
+
+}
 </style>

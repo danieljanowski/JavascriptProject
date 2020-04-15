@@ -6,6 +6,9 @@
                 <p> <a :href="prepareGoogleAddress(peep.name)" target="_blank">{{peep.name}}: {{peep.craft}} <br>Click for more information</a></p>
             </div>
         </div>
+        <div class="iss-crew">
+            <img src="https://thenypost.files.wordpress.com/2020/04/space-1.jpg" width="600px" alt="iss crew">
+        </div>
     </div>
 </template>
 
@@ -43,10 +46,14 @@ export default {
         color:white;
     }
 
+    .iss-crew{
+        padding: 60px;
+    }
+
     .p-cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .people-card {

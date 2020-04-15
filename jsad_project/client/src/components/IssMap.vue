@@ -3,7 +3,6 @@
 <div class ="iss-container">
   <div class="iss-map" style="height:700px; width: 80%; align: center;">
         <h3>Current Latitude: {{issPosition.latitude}} and Longitude: {{issPosition.longitude}}</h3>
-
     <l-map
       v-if="showMap"
       :zoom="zoom"
@@ -86,6 +85,9 @@ export default {
 .iss-container {
     display: flex;
     justify-content: center;
+    border-radius: 12px;
+    margin: 1%;
+    padding: 0.5%;
   }
 
 </style>
