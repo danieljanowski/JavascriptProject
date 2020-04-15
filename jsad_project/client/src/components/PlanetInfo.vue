@@ -239,7 +239,7 @@ export default {
   height: auto;
 }
 
-.
+
 
 .planet-bio{
     padding: 2%;
