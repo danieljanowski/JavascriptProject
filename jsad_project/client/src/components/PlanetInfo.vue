@@ -221,7 +221,6 @@ export default {
      flex-flow: flex-direction;
      align-content: flex-start;
      flex-wrap: wrap;
-     
      height: 500px;
      margin-top: 1px;
      padding-top: 1px;
@@ -239,6 +238,8 @@ export default {
   border-radius: 12px;
   height: auto;
 }
+
+.
 
 .planet-bio{
     padding: 2%;
