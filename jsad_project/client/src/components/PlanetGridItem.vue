@@ -25,12 +25,12 @@ export default {
 </script>
 
 <style scoped>
-#planet-selector{background-color: #27292D;
-                        color: #EEEEEE;
-                        border-style: none;
-                        padding: 2%;
-                        width: 100%;
+#planet-selector{
+    color: #EEEEEE;
+    border-style: none;
+    padding: 2%;
+    width: 100%;
                         
 }
 
-</style>
+</style>:

@@ -40,18 +40,14 @@ export default {
 .pic-explanation{
   padding: 2%;
   margin:2%;
-  background-color: silver;
+  background-color: #B1C4EF;
   margin: 2%;
   text-align: center;
   width: 93%;
-  color: #2A73C1;
+  color: #130B5B;
   float:left;
   position: relative;
   border-radius: 12px;
-}
-
-h1 {
-    font-style: oblique;
 }
 
 .pic-explanation {

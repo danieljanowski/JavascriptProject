@@ -28,13 +28,13 @@ export default {
 
 <style scoped>
 .fav-container{
-  background-color: silver;
+  background-color: #b1c4ef;
   text-align: center;
   display: flex;
   flex-direction: column;
-  border-radius: 10%;
-  color: #2A73C1;
-  margin-top: 50px;
+  border-radius: 12px;
+  color: #130b5b;
+  margin-top: 100px;
   padding: 1%;
   margin-left: 7%;
   margin-right: 7%;

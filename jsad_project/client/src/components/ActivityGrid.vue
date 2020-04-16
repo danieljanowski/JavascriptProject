@@ -110,6 +110,8 @@ export default {
     display: flex;
     justify-content: space-evenly;
     align-content: center;
+    position: relative;
+    top: -425px;
 }
 
 
