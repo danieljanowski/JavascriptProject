@@ -43,7 +43,7 @@ export default {
     
     a {
         text-decoration: none;
-        color:white;
+        color: #130b5b;;
     }
 
     .iss-crew{
@@ -58,7 +58,7 @@ export default {
 
     .people-card {
             /* flex: 0 1 calc(40% - 1em); */
-            background-color: grey;
+            background-color: #B1C4EF;
             margin: 2%;
             padding: 2%;
         }

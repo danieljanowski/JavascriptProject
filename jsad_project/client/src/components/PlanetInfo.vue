@@ -9,7 +9,7 @@
             <p>It is the closest planet to the Sun.</p>
             <p>It was first recorder in the 14th century BC </p>
             <p>It is the second densest planet.</p>
-            <p>It is the second hottest planet</p>
+            <p>It is the second hottest planet.</p>
             <p>Only two spacecraft have ever visited Mercury.</p>
             </div>
             <div class="planet-bio">
@@ -24,12 +24,12 @@
             <!-- Venus Info -->
             <div class="planet-facts">
           <h1>Fun Facts about {{selectedPlanet.name}}!</h1>
-            <p>It does not have any moons or rings</p>
+            <p>It does not have any moons or rings.</p>
             <p>It is nearly as big as the Earth with a diameter of 12,104 km</p>
             <p>It is thought to be made up of a central iron core, rocky mantle and silicate crust.</p>
             <p>The surface temperature on Venus can reach 471 °C.</p>
             <p>It is the second brightest object in the night sky.</p>
-            <p>It is the hottest planet in our solar system</p>
+            <p>It is the hottest planet in our solar system.</p>
             </div>
             <div class="planet-bio">
             <h1>{{ selectedPlanet.name }}'s Bio</h1>
@@ -47,13 +47,13 @@
             <p>The Earth was once believed to be the centre of the universe.</p>
             <p>It has a powerful magnetic field.</p>
             <p>There is only one natural satellite (moon) of the planet Earth.</p>
-            <p>The Earth is the densest planet in the Solar System</p>
+            <p>The Earth is the densest planet in the Solar System.</p>
             <p>Earth is the only planet not named after a god.</p>
             </div>
             <div class="planet-bio">
              <h1>{{ selectedPlanet.name }}'s Bio</h1>
             <p>Our home planet Earth is a rocky, terrestrial planet. It has a solid and active surface with mountains, valleys, canyons, plains and so much more. Earth is special because it is an ocean planet. Water covers 70% of Earth's surface.
-                Our atmosphere is made mostly of nitrogen and has plenty of oxygen for us to breathe. The atmosphere also protects us from incoming meteoroids, most of which break up in our atmosphere before they can strike the surface as meteorites
+                Our atmosphere is made mostly of nitrogen and has plenty of oxygen for us to breathe. The atmosphere also protects us from incoming meteoroids, most of which break up in our atmosphere before they can strike the surface as meteorites.
             </p>
             </div>
         </div>
@@ -62,9 +62,9 @@
             <!-- Luna Info -->
             <div class="planet-facts">
             <h1>Fun Facts about {{selectedPlanet.name}}!</h1>
-            <p>It is the fifth largest moon in the Solar System</p>
+            <p>It is the fifth largest moon in the Solar System.</p>
             <p>The Moon orbits the Earth every 27.3 days.</p>
-            <p>Mons Huygens is the tallest mountain on the Moon, it is 4700 metres tall, just over half the height of Mt Everest</p>
+            <p>Mons Huygens is the tallest mountain on the Moon, it is 4700 metres tall, just over half the height of Mt Everest.</p>
             <p>The first person to set foot on the Moon was Neil Armstrong.</p>
             <p>Although research is continuing, most scientists agree that the Moon features small amounts of water.</p>
             <p>It is very hot during the day but very cold at night. The average surface temperature of the Moon is 107 degrees Celsius during the day and -153 degrees Celsius at night.</p>
@@ -83,7 +83,7 @@
             <div class="planet-facts">
             <h1>Fun Facts about {{selectedPlanet.name}}!</h1>
             <p>It and Earth have approximately the same landmass.</p>
-            <p>It is home to the tallest mountain in the solar system (21km high)</p>
+            <p>It is home to the tallest mountain in the solar system (21km high).</p>
             <p>Only 18 out of 40 missions to Mars have been successful. </p>
             <p>It has the largest dust storms in the solar system.</p>
             <p>Pieces of Mars have fallen to Earth.</p>
@@ -104,9 +104,9 @@
             <h1>Fun Facts about {{selectedPlanet.name}}!</h1>
             <p>The ancient Babylonians were the first to record their sightings of Jupiter.</p>
             <p>It has unique cloud features.</p>
-            <p>The Great Red Spot is a huge storm on Jupiter. it's been going for 350 years and could fit 3 earths</p>
-            <p>Its interior is made of rock, metal, and hydrogen compounds</p>
-            <p>Its moon "Ganymede" is the largest moon in the solar system</p>
+            <p>The Great Red Spot is a huge storm on Jupiter. It's been going for 350 years and could fit 3 earths.</p>
+            <p>Its interior is made of rock, metal, and hydrogen compounds.</p>
+            <p>Its moon "Ganymede" is the largest moon in the solar system.</p>
             <p>Eight spacecraft have visited Jupiter.</p>
             </div>
             <div class="planet-bio">
@@ -170,12 +170,12 @@
             <p>It is the smallest gas giant.</p>
             <p>It has 6 faint rings.</p>
             <p>Its moons are named after characters created by William Shakespeare and Alexander Pope.</p>
-            <p>It has a very active climate. Winds can reach speeds of 600 meters a second</p>
+            <p>It has a very active climate. Winds can reach speeds of 600 meters a second.</p>
             <p>Only one spacecraft has flown by Neptune.</p>
             </div>
              <div class="planet-bio">
              <h1>{{ selectedPlanet.name }}'s Bio</h1>
-            <p>Neptune is dark, cold, and very windy. It's the last of the planets in our solar system. It's more than 30 times as far from the sun as Earth
+            <p>Neptune is dark, cold, and very windy. It's the last of the planets in our solar system. It's more than 30 times as far from the sun as Earth.
                  Neptune is very similar to Uranus. It's made of a thick fog of water, ammonia, and methane over an Earth-sized solid center. Its atmosphere is made of hydrogen,
                   helium, and methane. The methane gives Neptune the same blue color as Uranus.
                  Neptune has six rings, but they're very hard to see.
@@ -187,10 +187,10 @@
             <!-- Pluto Info -->
             <div class="planet-facts">
             <h1>Fun Facts about {{selectedPlanet.name}}!</h1>   
-            <p>It was discovered on February 18th, 1930 by the Lowell Observatory</p>
+            <p>It was discovered on February 18th, 1930 by the Lowell Observatory.</p>
             <p>It was reclassified from a planet to a dwarf planet in 2006.</p>
             <p>It is smaller than a number of moons.</p>
-            <p>It has a eccentric and inclined orbit. This means it is sometimes closer to the sun than Neptune</p>
+            <p>It has a eccentric and inclined orbit. This means it is sometimes closer to the sun than Neptune.</p>
             <p>It is named after the Roman god of the underworld.</p>
             <p>It has been visited by one spacecraft.</p>
             </div>
@@ -230,11 +230,11 @@ export default {
      }
 .planet-facts{
     padding: 2%;
-  background-color: silver;
+  background-color: #B1C4EF;
   margin: 2%;
   text-align: center;
     width: 33%;
-  color: #2A73C1;
+  color: #130B5B;
   float: left;
   border-radius: 12px;
   height: auto;
@@ -242,9 +242,9 @@ export default {
 
 .planet-bio{
     padding: 2%;
-  background-color: silver;
+  background-color: #B1C4EF;
   position: relative;
-  color: #2A73C1;
+  color: #130B5B;
   margin: 2%;
   text-align: center;
   width: 50%;
@@ -260,4 +260,7 @@ p {
      margin-left: 40px;
      margin-right: 40px;
 }
+
+
+
 </style>

@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <h1><img src="./assets/orbital.png" alt=""></h1>
+    <hero-img/>
+    <!-- <h1><img src="./assets/orbital.png" alt=""></h1> -->
     <activity-grid/>
     <iss-tracker v-if="selectedActivity === 'iss-tracker'"/>
     <planets-grid v-if="selectedActivity === 'planets'" :planets='planets'/>
@@ -14,6 +15,7 @@
 </template>
 
 <script>
+import HeroImg from './components/HeroImg';
 import PlanetsGrid from './components/PlanetsGrid';
 import PlanetDetail from './components/PlanetDetail';
 import PlanetFavourites from './components/PlanetFavourites';
@@ -37,7 +39,8 @@ export default {
     'planet-info': PlanetInfo,
     'iss-tracker': IssTracker,
     'space-peeps': SpacePeople,
-    'pic-of-the-day': PicOfTheDay
+    'pic-of-the-day': PicOfTheDay,
+    'hero-img': HeroImg
   },
 data(){
   return{
@@ -83,6 +86,11 @@ li {
 p {
   font-size: 1.25em;
 }
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+}
+
 </style>
     
     

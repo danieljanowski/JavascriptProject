@@ -112,9 +112,9 @@ export default {
 
 .mission-info {
   padding: 2%;
-  background-color: silver;
+  background-color: #b1c4ef;
   position: relative;
-  color: #2A73C1;
+  color: #130b5b;
   margin: 2%;
   text-align: center;
   width: 60%;
@@ -129,11 +129,11 @@ export default {
 
 .key-facts{
   padding: 2%;
-  background-color: silver;
+  background-color: #b1c4ef;
   margin: 2%;
   text-align: center;
   width: 25%;
-  color: #2A73C1;
+  color: #130b5b;
   float: left;
   border-radius: 12px;
 }
@@ -143,7 +143,7 @@ export default {
   top : 50%;
   padding: 2%;
   margin: 2%;
-  color: #2A73C1;
+  color: #130b5b;
   text-align: left;
   z-index: -1;
   position: relative;
@@ -154,5 +154,7 @@ export default {
   position: relative;
   background:rgba(3, 3, 3, 0.904);
 }
+
+summary{color:#B1C4EF}
 
 </style>

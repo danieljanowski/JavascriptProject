@@ -167,10 +167,10 @@ computed: {
 .did-you-know-info{
   padding: 2%;
   margin: 2%;
-  background-color: silver;
+  background-color: #B1C4EF;
   display: flex;
   flex-direction: column;
-  color: #2A73C1;
+  color: #130B5B;
   position: relative;
   border-radius: 12px;
   bottom: 25px
@@ -193,7 +193,7 @@ computed: {
 }
 
 button {
-  background-color: red; 
+  background-color: rgb(255, 102, 0); 
   border: none;
   color: white;
   padding: 15px 32px;
@@ -205,13 +205,15 @@ button {
   cursor: pointer;
   -webkit-transition-duration: 0.4s; 
   transition-duration: 0.4s;
+  border-radius: 12px;
 }
 
 button:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   background-color: white; 
   border: none;
-  color: red;
+  color: rgb(255, 102, 0);
+  border-radius: 12px;
 }
 
 input {
@@ -219,10 +221,6 @@ input {
   text-align: center; 
   padding: 12px;
   margin-right: 16px;
-}
-
-h1 {
-    font-style: oblique;
 }
 
 p {

@@ -115,11 +115,11 @@ summary{
 
 .iss-info-vocab{
     padding: 2%;
-  background-color: silver;
+  background-color: #B1C4EF;
   margin: 2%;
   text-align: center;
     width: 30%;
-  color: #2A73C1;
+  color: #130B5B;
   position: relative;
   float: left;
   border-radius: 12px;
@@ -129,11 +129,11 @@ summary{
 .iss-info{
       padding: 2%;
       margin:2%;
-  background-color: silver;
+  background-color:#B1C4EF;
   margin: 2%;
   text-align: center;
     width: 93%;
-  color: #2A73C1;
+  color: #130B5B;
   float:left;
   position: relative;
   border-radius: 12px;
@@ -153,11 +153,6 @@ summary{
 .iss-intro {
     margin-top: 100px;
     padding-top: 50px;
-}
-
-
-h1 {
-    font-style: oblique;
 }
 
 p {

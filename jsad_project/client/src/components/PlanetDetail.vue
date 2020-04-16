@@ -28,7 +28,7 @@
                 <input class="calculator-input" v-model.number="age" placeholder="Your age on Earth" type="number"  required>            
                 
     </div>
-    <!-- <planet-info :selectedPlanet='selectedPlanet'></planet-info> -->
+    <!-- <planet-infectedPlanet='selectedPlanet'></planet-info> -->
   </div>
 </template>
 
@@ -67,7 +67,7 @@ export default {
 </script>
 
 <style scoped>
-    .detail-container{ background-color: #27292D;
+    .detail-container{ 
                         color: #EEEEEE;
                         border-style: none;
                         border-radius: 12px;
@@ -80,19 +80,22 @@ export default {
                         margin-bottom: 1px;
                         padding-bottom: 1px;
                         } 
-    h2{color: #2A73C1;}
-    h3{color: #2A73C1;
+    h2{color: #130B5B;}
+    
+    h3{color: #130B5B;
     font-size: 1.5em;}
 
-    button { background-color: #2A73C1;
+    button { background-color: #130B5B;
             color: #EEEEEE;
             border-style: solid 4px;
             border-color:  #2A73C1;
             border-radius: 12px;
             font-size: 1em;
-            font-family: 'Roboto Slab', serif;}
-    button:hover {background-color: #27292D;
-                color: #2A73C1;
+            font-family: 'Orbitron', sans-serif;
+    }
+
+    button:hover {background-color: black;
+                color: #eeeeee;
                 transition: 0.6s;
                 }
 
@@ -101,7 +104,7 @@ export default {
   padding: 2%;
   align-self: center;
 }
-#age-icon{
+#age-icon{ 
   align-self: center;
   padding: 2%;
   
@@ -110,29 +113,32 @@ export default {
 #weight-calculator{
   padding: 2%;
   margin: 0.5%;
-  background-color: silver;
+  background-color: #B1C4EF;
   display: flex;
   flex-direction: column;
   border-radius: 10%;
-  color: #2A73C1;
+  color: #130B5B;  
 }
+
 #age-calculator{
   padding: 2%;
   margin: 0.5%;
-  background-color: silver;
+  background-color: #B1C4EF;
   display: flex;
   flex-direction: column;
   border-radius: 10%;
-  color: #2A73C1;
+  color: #130B5B;
 }
+
 #detail-info{
   padding: 2%;
   margin: 0.5%;
-  background-color: silver;
+  background-color: #B1C4EF;
   display: flex;
   flex-direction: column;
   border-radius: 10%;
-  color: #2A73C1;
+   color: #130B5B;
+
 }
 
 .calculator-input{
