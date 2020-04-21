@@ -79,16 +79,19 @@ A user should be able to:
 
 ## Code highlights
 
-Rovers' random photos method:
+### Rovers' random photos method:
 ![Random photos method](https://github.com/saracastellino/week_9_team_project/blob/master/code/Orbital_code_random_photos.png)
 
 
-ISS Tracker API data fetch method:
+
+### ISS Tracker API data fetch method:
 ![ISS Tracker fetch method](https://github.com/saracastellino/week_9_team_project/blob/master/code/Orbital_code_iss_tracker_fetch.png)
 
 
-ISS Map vue file:
+
+### ISS Map vue file:
 ![ISS Map vue](https://github.com/saracastellino/week_9_team_project/blob/master/code/Orbital_code_iss_map_vue.png)
+
 
 ## Links
 
