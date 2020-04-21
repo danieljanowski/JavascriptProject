@@ -25,7 +25,6 @@ The app allows the user to:
 Big. Bright. Bold.
 Engage. Entertain. Educate.
 
-
 - Incorporate familiar elements
 - Break with traditional structure
 - Create a world with depth
@@ -48,30 +47,31 @@ Javascript, Nodejs, Express, MongoDb, Insomnia, HTML, CSS, NPM, Vue.js, NASA API
 
 ## MVP
 
-MVP
 A user should be able to:
 
-View the educational content on a particular topic
-Display Mars Rover photos
-Display Rovers key-facts and Mission info
-Be able to interact with the page to move through different sections of content
-Search and display photos from a particular Sol
-Select and display more info about each rover: Curiosity, Spirit & Opportunity
-Favourite planets list
-Displaying selected items
+- View the educational content on a particular topic
+- Display Mars Rover photos
+- Display Rovers key-facts and Mission info
+- Be able to interact with the page to move through different sections of content
+- Search and display photos from a particular Sol
+- Select and display more info about each rover: Curiosity, Spirit & Opportunity
+- Favourite planets list
+- Displaying selected items
 
 ## Extensions
-Display who is in space
-Track the ISS on a map
-Convert Earth days into SOLs
+
+- Display who is in space
+- Track the ISS on a map
+- Convert Earth days into SOLs
 
 ## Extensions on their way
-Implement the 'Favourite planet' function in the Planets section for the user to share its favourite planets on Social Medias
-Form, Sort, Search functions
-Listing the observatories
-Change the background to NASA's pic of the day
-User login
-SpaceX
+
+- Implement the 'Favourite planet' function in the Planets section for the user to share its favourite planets on Social Medias
+- Form, Sort, Search functions
+- Listing the observatories
+- Change the background to NASA's pic of the day
+- User login
+- SpaceX
 
 ## Code highlights
 
