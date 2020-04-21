@@ -20,6 +20,10 @@ The app allows the user to:
 
 # UX
 
+## Protopersonas
+
+![Protopersonas](https://github.com/saracastellino/week_9_team_project/blob/master/protopersonas.png)
+
 ## Styling
 
 Big. Bright. Bold.
@@ -34,7 +38,7 @@ Engage. Entertain. Educate.
 - Incorporate games and activities
 
 
-# Homepage wireframe
+## Homepage wireframe
 
 ![Homepage wireframe](https://github.com/saracastellino/week_9_team_project/blob/master/wireframes/planet-content-extension.png)
 
