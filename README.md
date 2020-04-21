@@ -131,19 +131,20 @@ npm i express
 npm i body-parser
 npm i cors
 npm i mongodb
+```
 
 ### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 ### CD into server/db
-
+```
 mongo < seeds.js
-
+```
 ### CD into server
-
+```
 npm run server:dev
-
+```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
