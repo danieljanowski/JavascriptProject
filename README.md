@@ -1,4 +1,4 @@
-![Logo of the project](week_9_team_project/wireframes/template.png)
+![Logo of the project](https://github.com/saracastellino/week_9_team_project/wireframes/template.png)
 
 # Orbital | Educational Space application
 
