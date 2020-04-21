@@ -1,4 +1,4 @@
-![Logo of the project](week_9_team_project/jsad_project/client/src/assets/orbital.png)
+![Logo of the project](week_9_team_project/wireframes/template.png)
 
 # Orbital | Educational Space application
 
