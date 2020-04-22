@@ -70,7 +70,7 @@ A user should be able to:
 
 ## Extensions on their way
 
-- Implement the 'Favourite planet' function in the Planets section for the user to share its favourite planets on Social Medias
+- Implement the 'Favourite planet' function in the Planets section for the user to share their favourite planets on Social Medias
 - Form, Sort, Search functions
 - Listing the observatories
 - Change the background to NASA's pic of the day
