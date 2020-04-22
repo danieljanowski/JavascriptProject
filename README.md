@@ -108,7 +108,7 @@ A user should be able to:
 
 # Installing / Getting started
 
-Clone the project down.
+Clone the project down from https://github.com/saracastellino/week_9_team_project/tree/master/jsad_project.
 CD into root of project.
 
 # client
@@ -129,10 +129,10 @@ npm run build
 ```
 
 ### Dependencies
-
+```
 npm install vue2-leaflet leaflet --save
 npm install --save vue-scrollto
-
+```
 
 # server
 
