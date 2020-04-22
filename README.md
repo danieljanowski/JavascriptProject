@@ -143,6 +143,7 @@ npm i express
 npm i body-parser
 npm i cors
 npm i mongodb
+npm i nodemon
 ```
 
 ### Compiles and hot-reloads for development
