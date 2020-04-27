@@ -78,7 +78,7 @@
                     storm descended on the rover and the skies were choked of all sunlight the solar-powered, Opportunity messaged NASA saying: "My battery is low and it’s getting dark.”
                 </p>
                     <details class="cameras">
-                        <summary> Rover Camer as </summary>
+                        <summary> Rover Cameras </summary>
                     <img src="../assets/roversCameras.jpeg" alt="" width="500px">
             </details>
             </div>

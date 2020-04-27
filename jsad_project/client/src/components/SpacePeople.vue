@@ -61,6 +61,7 @@ export default {
             background-color: #B1C4EF;
             margin: 2%;
             padding: 2%;
+            border-radius: 12px;
         }
 
     .peeps-intro {
