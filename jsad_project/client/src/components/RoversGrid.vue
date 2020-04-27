@@ -153,9 +153,10 @@ computed: {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: silver;
+    background-color: #B1C4EF;
     border-radius: 12px;
     margin: 2%;
+    color: #130B5B;
 }
 
 /* #info-container1{display: flex;
