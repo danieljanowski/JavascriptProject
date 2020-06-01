@@ -1,4 +1,4 @@
-![Logo of the project](https://github.com/saracastellino/week_9_team_project/blob/master/wireframes/template.png)
+![Logo of the project](https://github.com/danieljanowski/week_9_team_project/blob/master/wireframes/template.png)
 
 # Orbital | Educational Space application
 
@@ -22,7 +22,7 @@ The app allows the user to:
 
 ## Protopersonas
 
-![Protopersonas](https://github.com/saracastellino/week_9_team_project/blob/master/protopersonas.png)
+![Protopersonas](https://github.com/danieljanowski/JavascriptProject/blob/master/protopersonas.png)
 
 ## Styling
 
@@ -40,7 +40,7 @@ Engage. Entertain. Educate.
 
 ## Homepage wireframe
 
-![Homepage wireframe](https://github.com/saracastellino/week_9_team_project/blob/master/wireframes/planet-content-extension.png)
+![Homepage wireframe](https://github.com/danieljanowski/week_9_team_project/blob/master/wireframes/planet-content-extension.png)
 
 
 # Back end
@@ -80,23 +80,23 @@ A user should be able to:
 ## Code highlights
 
 ### Rovers' random photos method:
-![Random photos method](https://github.com/saracastellino/week_9_team_project/blob/master/code/Orbital_code_random_photos.png)
+![Random photos method](https://github.com/danieljanowski/week_9_team_project/blob/master/code/Orbital_code_random_photos.png)
 
 
 
 ### ISS Tracker API data fetch method:
-![ISS Tracker fetch method](https://github.com/saracastellino/week_9_team_project/blob/master/code/Orbital_code_iss_tracker_fetch.png)
+![ISS Tracker fetch method](https://github.com/danieljanowski/week_9_team_project/blob/master/code/Orbital_code_iss_tracker_fetch.png)
 
 
 
 ### ISS Map vue file:
-![ISS Map vue](https://github.com/saracastellino/week_9_team_project/blob/master/code/Orbital_code_iss_map_vue.png)
+![ISS Map vue](https://github.com/danieljanowski/week_9_team_project/blob/master/code/Orbital_code_iss_map_vue.png)
 
 
 ## Links
 
-- Project homepage: https://github.com/saracastellino/week_9_team_project/tree/master/jsad_project
-- Repository: https://github.com/saracastellino/week_9_team_project
+- Project homepage: https://github.com/danieljanowski/week_9_team_project/tree/master/jsad_project
+- Repository: https://github.com/danieljanowski/week_9_team_project
 
 - NASA APIs: https://api.nasa.gov
 - NASA Mars Photos API: https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1&api_key=DEMO_KEY
@@ -108,7 +108,7 @@ A user should be able to:
 
 # Installing / Getting started
 
-Clone the project down from https://github.com/saracastellino/week_9_team_project/tree/master/jsad_project.
+Clone the project down from https://github.com/danieljanowski/week_9_team_project/tree/master/jsad_project.
 CD into root of project.
 
 # client
