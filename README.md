@@ -103,7 +103,7 @@ A user should be able to:
 - NASA photo of the day: https://api.nasa.gov/planetary/apod
 - Open Notify ISS crew API: http://api.open-notify.org/astros.json
 - Open Notify ISS tracker: http://api.open-notify.org/iss-now.json
-- Planets MongoDB database: https://github.com/saracastellino/week_9_team_project/blob/master/jsad_project/server/db/seeds.js
+- Planets MongoDB database: https://github.com/danieljanowski/week_9_team_project/blob/master/jsad_project/server/db/seeds.js
 
 
 # Installing / Getting started
