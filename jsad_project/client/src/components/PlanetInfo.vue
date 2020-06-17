@@ -218,50 +218,46 @@ export default {
 <style scoped>
 #planet-info-container{
     display: flex;
-     flex-flow: flex-direction;
-     align-content: flex-start;
-     flex-wrap: wrap;
-     height: 500px;
-     margin-top: 1px;
-     padding-top: 1px;
-     padding-left: 70px;
-     padding-right: 70px;
-     }
-.planet-facts{
-    padding: 2%;
-  background-color: #B1C4EF;
-  margin: 2%;
-  text-align: center;
-    width: 33%;
-  color: #130B5B;
-  float: left;
-  border-radius: 12px;
-  height: auto;
+    flex-flow: flex-direction;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    height: 500px;
+    margin-top: 1px;
+    padding-top: 1px;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
-
+.planet-facts{
+    padding: 2%;
+    background-color: #B1C4EF;
+    margin: 2%;
+    text-align: center;
+    width: 33%;
+    color: #130B5B;
+    float: left;
+    border-radius: 12px;
+    height: auto;
+}
 
 .planet-bio{
     padding: 2%;
-  background-color: #B1C4EF;
-  position: relative;
-  color: #130B5B;
-  margin: 2%;
-  text-align: center;
-  width: 50%;
-  order: 2;
-  bottom: 0%;
+    background-color: #B1C4EF;
+    position: relative;
+    color: #130B5B;
+    margin: 2%;
+    text-align: center;
+    width: 50%;
+    order: 2;
+    bottom: 0%;
     height: auto;
-  float: right; 
-  border-radius: 12px;
+    float: right; 
+    border-radius: 12px;
 }
 
 p {
-     text-align: justify;
-     margin-left: 40px;
-     margin-right: 40px;
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 40px;
 }
-
-
-
 </style>

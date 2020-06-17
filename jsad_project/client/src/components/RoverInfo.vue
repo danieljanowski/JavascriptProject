@@ -96,17 +96,11 @@ export default {
 </script>
 
 <style scoped>
-
- /* .info-container{ 
-    order: 1;
-
-} */
 #main-info-container{
     display: flex;
      flex-flow: flex-direction;
      align-content: flex-start;
      flex-wrap: wrap;
-     
      height: 500px;
 }
 
@@ -124,7 +118,6 @@ export default {
   height: 350px;
   border-radius: 12px;
   text-align: justify;
-
 }
 
 .key-facts{

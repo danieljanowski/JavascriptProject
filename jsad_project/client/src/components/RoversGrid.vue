@@ -142,7 +142,6 @@ computed: {
 .single-rover-photo-container{
     display: flex;
     flex-direction: column;
-    /* width: 450px; */
     padding-right: 10px;
     padding-left: 10px;
     padding-top: 15px;
@@ -158,12 +157,6 @@ computed: {
     margin: 2%;
     color: #130B5B;
 }
-
-/* #info-container1{display: flex;
-                flex-direction: column;
-                justify-content: center;
-                padding: 2%;
-                } */
 
 .did-you-know-info{
   padding: 2%;
@@ -225,10 +218,10 @@ input {
 }
 
 p {
-     text-align: justify;
-     margin-top: 50px;
-     margin-left: 110px;
-     margin-right: 110px;
+    text-align: justify;
+    margin-top: 50px;
+    margin-left: 110px;
+    margin-right: 110px;
 }
 
 </style>
