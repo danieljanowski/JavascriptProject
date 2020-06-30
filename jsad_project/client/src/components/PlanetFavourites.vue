@@ -12,7 +12,6 @@
     </div>
 </template>
 
-
 <script>
     import PlanetService from '@/services/PlanetService';
     import PlanetDetail from '../components/PlanetDetail';

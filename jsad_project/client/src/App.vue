@@ -49,7 +49,6 @@ data(){
     selectedPlanet: null,
     favPlanets: [],
     selectedActivity: null 
-     
   };
 },
 mounted(){

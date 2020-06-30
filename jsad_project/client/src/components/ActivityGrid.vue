@@ -23,7 +23,6 @@ export default {
             this.selectedActivity = "rovers";
             eventBus.$emit('selected-activity', this.selectedActivity);
         },
-        
         handleSelectPlanets(){
             this.selectedActivity = "planets";
             eventBus.$emit('selected-activity', this.selectedActivity);
@@ -65,6 +64,4 @@ export default {
     position: relative;
     top: -425px;
 }
-
-
 </style>
