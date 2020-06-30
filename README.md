@@ -4,6 +4,7 @@
 
 Interactive browser application that displays information about Space in a fun and interesting way.
 
+![Project Preview](https://github.com/danieljanowski/JavascriptProject/blob/master/Orbital720p.gif)
 
 ## Features
 
