@@ -6,7 +6,7 @@ Interactive browser application that displays information about Space in a fun a
 
 ![Project Preview](https://github.com/danieljanowski/JavascriptProject/blob/master/Orbital720p.gif)
 
-![Deployed Project](https://orbital-space-app.herokuapp.com/)
+Project deployed on Heroku: https://orbital-space-app.herokuapp.com
 
 ## Features
 
